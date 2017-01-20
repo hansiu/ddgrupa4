@@ -1,4 +1,3 @@
-smiles
 [*]CC(C)C
 [*]OC1OC(CO)C(O)C(O)C1O
 [*]Nc1ccc([*])cc1
@@ -19,5 +18,3 @@ smiles
 [*]OCc1ccccc1
 [*]c1ccc(Cl)cc1
 [*]c1ccnc([*])n1
-
-
