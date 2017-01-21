@@ -11,6 +11,7 @@ pockets_fasta = '../files/pockets_fasta'
 ligands_mol2 = '../files/ligands_mol2'
 # in repo
 groups = '../groups'
+inputfiles_path = '../inputfiles'
 
 def get_ligands():
 	for directory in glob.glob(ref_set_path+'/*'):
@@ -62,13 +63,13 @@ def get_group_dict():
 def sort_pocket_groups():
 	ids = get_group_dict()
 	for gr in ids.keys():
-		d = pockets_fasta+'/'+gr
+		d = inputfiles_path+'/pockets/'+gr
 		try:
 			os.mkdir(d)
 		except:
 			print 'Directory '+d+' already exists'
 		for name in ids[gr]:
-			os.system('cp '+pockets_fasta+'/'+name+'.fasta '+d+'/')
+			os.system('cp '+inputfiles_path+'/pockets/'+name+'_pocket.pdb '+d+'/')
 	print 'ALL DONE!'
 
 def sort_ligands_groups():
