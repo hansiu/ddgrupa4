@@ -1,0 +1,84 @@
+>>> patt = Chem.MolFromSmarts("[*]N1CCOCC1")
+>>> supp = Chem.SDMolSupplier("5clm_ligand.sdf")
+>>> supp[0]
+<rdkit.Chem.rdchem.Mol object at 0x107bc2360>
+>>> ind_map = {}
+>>> for atom in supp[0].GetAtoms():
+...     map_num = atom.GetAtomMapNum()
+...     if map_num:
+...             ind_map[map_num-1] = atom.GetIdx()
+... 
+>>> ind_map
+{}
+>>> supp = Chem.MolFromMol2File("5clm_ligand.mol2")
+>>> print supp
+<rdkit.Chem.rdchem.Mol object at 0x107bc2360>
+>>> for atom in supp.GetAtoms():
+...     map_num = atom.GetAtomMapNum()
+...     if map_num:
+...             ind_map[map_num-1] = atom.GetIdx()
+... ind_map
+  File "<stdin>", line 5
+    ind_map
+          ^
+SyntaxError: invalid syntax
+>>> for atom in supp.GetAtoms():
+...     map_num = atom.GetAtomMapNum()
+...     if map_num:
+...             ind_map[map_num-1] = atom.GetIdx()
+... 
+>>> ind_map
+{}
+>>> for atom in supp.GetAtoms():
+...     print atom.GetAtomicNum()
+... 
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+17
+7
+6
+6
+8
+7
+6
+6
+6
+6
+7
+7
+8
+>>> patt = Chem.MolFromSmarts("[*]N1CCOCC1")
+>>> supp.HasSubstructMatch(patt)
+False
+>>> patt = Chem.MolFromSmarts("*N1CCOCC1")
+>>> supp.HasSubstructMarch(patt)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Mol' object has no attribute 'HasSubstructMarch'
+>>> supp.HasSubstructMatch(patt)
+False
+>>> att = Chem.MolFromSmarts("N1CCOCC1")
+>>> supp.HasSubstructMatch(att)
+True
+>>> m = Chem.MolFromSmarts("[*]N1CCOCC1")
+>>> supp.HasSubstructMatch(m)
+False
+>>> m = Chem.MolFromSmarts("*N1CCOCC1")
+>>> supp.HasSubstructMatch(m)
+False
+>>> supp.GetSubstructMatches(patt)
+()
+>>> supp.GetSubstructMatches(att)
+((21, 1, 0, 23, 2, 3),)
+>>> supp = Chem.MolFromMol2File("4y79_ligand.mol2")
+>>> supp.HasSubstructMatch(att)
+RD
