@@ -1,9 +1,15 @@
+# Inputfiles preparation
+
+from Bio import SeqIO
 import glob, os
 
-ref_set_path = '../refined-set'
+# not in repo
+ref_set_path = '../refined-set' 
 gen_set_path = '../general-set-except-refined'
 files_path = '../files'
-
+pockets_fasta = '../files/pockets_fasta'
+# in repo
+groups = '../groups'
 
 def get_ligands():
 	for directory in glob.glob(ref_set_path+'/*'):
@@ -27,8 +33,47 @@ def get_pockets():
 
 	print "I'M DONE!"
 
-def glue():
+def get_pockets_fasta():
+	for file in glob.glob(files_path+'/pockets/*'):
+		print file
+		name = file.split('/')[-1].split('_')[0]
+		c = SeqIO.convert(file, "pdb-atom", files_path+'/pockets_fasta/'+name+".fasta", "fasta")
+	print "I'M DONE!"
+
+def glue_ligands():
 	os.system('cat '+files_path+'/*.sdf > ../ligands.sdf')
 	print "I'M DONE!"
 
-get_pockets()
+def get_ids(file_name):
+	l = []
+	with open(file_name, 'r') as f:
+		for line in f:
+			l.append(line.split('_')[0])
+	return l
+
+def get_group_dict():
+	ids = {}
+	for file in glob.glob(groups+'/*.txt'):
+		gr=file.split('.txt')[0].split('_')[-1]
+		ids[gr] = get_ids(file)
+	return ids
+
+def sort_pocket_groups():
+	ids = get_group_dict()
+	for gr in ids.keys():
+		d = pockets_fasta+'/'+gr
+		try:
+			os.mkdir(d)
+		except:
+			print 'Directory '+d+' already exists'
+		for name in ids[gr]:
+			try:
+				os.system('cp '+pockets_fasta+'/'+name+'.fasta '+d+'/')
+			except:
+				print gr, name
+				try:
+					os.system('cp '+pockets_fasta+'/'+name.upper()+'.fasta '+d+'/')
+				except:
+					os.system('cp '+pockets_fasta+'/'+name.lower()+'.fasta '+d+'/')
+	print 'ALL DONE!'
+
