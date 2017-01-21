@@ -8,17 +8,18 @@ ref_set_path = '../refined-set'
 gen_set_path = '../general-set-except-refined'
 files_path = '../files'
 pockets_fasta = '../files/pockets_fasta'
+ligands_mol2 = '../files/ligands_mol2'
 # in repo
 groups = '../groups'
 
 def get_ligands():
 	for directory in glob.glob(ref_set_path+'/*'):
 		print 'ref',directory
-		os.system('cp '+directory+'/'+directory.split('/')[-1]+'_ligand.sdf '+files_path+'/ligands/')
+		os.system('cp '+directory+'/'+directory.split('/')[-1]+'_ligand.mol2 '+files_path+'/ligands_mol2/')
 
 	for directory in glob.glob(gen_set_path+'/*'):
 		print 'gen',directory 
-		os.system('cp '+directory+'/'+directory.split('/')[-1]+'_ligand.sdf '+files_path+'/ligands/')
+		os.system('cp '+directory+'/'+directory.split('/')[-1]+'_ligand.mol2 '+files_path+'/ligands_mol2/')
 
 	print "I'M DONE!"
 
@@ -67,13 +68,18 @@ def sort_pocket_groups():
 		except:
 			print 'Directory '+d+' already exists'
 		for name in ids[gr]:
-			try:
-				os.system('cp '+pockets_fasta+'/'+name+'.fasta '+d+'/')
-			except:
-				print gr, name
-				try:
-					os.system('cp '+pockets_fasta+'/'+name.upper()+'.fasta '+d+'/')
-				except:
-					os.system('cp '+pockets_fasta+'/'+name.lower()+'.fasta '+d+'/')
+			os.system('cp '+pockets_fasta+'/'+name+'.fasta '+d+'/')
+	print 'ALL DONE!'
+
+def sort_ligands_groups():
+	ids = get_group_dict()
+	for gr in ids.keys():
+		d = ligands_mol2+'/'+gr
+		try:
+			os.mkdir(d)
+		except:
+			print 'Directory '+d+' already exists'
+		for name in ids[gr]:
+			os.system('cp '+ligands_mol2+'/'+name+'_ligand.mol2 '+d+'/')
 	print 'ALL DONE!'
 
