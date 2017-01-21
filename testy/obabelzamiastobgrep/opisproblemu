@@ -1,0 +1,3 @@
+Struktury wyszukiwano narzędziem obgrep oraz babel --filter.
+babel --filter zwracał wiecej, wiec dla grupy z najmniejszą liczbą znalezionych ligandów sprawdzono jakie są różnice.
+babel znalazł 1 więcej, reszta ta sama. ta jedna to 5clm_ligand gdzie ta grupa jest z dodatkiem, takich nie chcemy więc zdecydowaliśmy się na obgrepa (chociaz nie przejrzeliśmy wszyskich plików więc nie możemy mieć pewności że w żadnym nie ma czegoś takiego dziwnego).
