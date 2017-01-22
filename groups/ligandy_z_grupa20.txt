@@ -552,7 +552,6 @@
 3zh8_ligand
 3zim_ligand
 3zmm_ligand
-3zs1_ligand
 3ztx_ligand
 3zvv_ligand
 3zy2_ligand

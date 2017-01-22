@@ -525,6 +525,8 @@
 3el8_ligand
 3elj_ligand
 3eoc_ligand
+3eos_ligand
+3eou_ligand
 3eqb_ligand
 3eqr_ligand
 3et7_ligand
@@ -558,8 +560,10 @@
 3g86_ligand
 3g8o_ligand
 3g90_ligand
+3gc4_ligand
 3gcq_ligand
 3gcs_ligand
+3ge7_ligand
 3gfw_ligand
 3gqz_ligand
 3gvu_ligand
@@ -750,6 +754,7 @@
 3ti1_ligand
 3tiz_ligand
 3tjc_ligand
+3tll_ligand
 3tt0_ligand
 3tti_ligand
 3ttj_ligand
@@ -1052,10 +1057,13 @@
 4kpx_ligand
 4kql_ligand
 4kwg_ligand
+4kwo_ligand
 4l02_ligand
 4l0b_ligand
 4l8m_ligand
 4la7_ligand
+4lbu_ligand
+4leq_ligand
 4li5_ligand
 4lk7_ligand
 4lmn_ligand
@@ -1141,6 +1149,10 @@
 4pnk_ligand
 4pp7_ligand
 4ps5_ligand
+4puj_ligand
+4puk_ligand
+4pul_ligand
+4pum_ligand
 4puz_ligand
 4pv0_ligand
 4pyq_ligand
@@ -1151,6 +1163,8 @@
 4q08_ligand
 4q09_ligand
 4q0l_ligand
+4q4o_ligand
+4q4s_ligand
 4q6e_ligand
 4q9m_ligand
 4q9o_ligand

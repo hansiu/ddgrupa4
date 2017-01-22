@@ -42,9 +42,22 @@ def get_pockets_fasta():
 		c = SeqIO.convert(file, "pdb-atom", files_path+'/pockets_fasta/'+name+".fasta", "fasta")
 	print "I'M DONE!"
 
-def glue_ligands():
-	os.system('cat '+files_path+'/*.sdf > ../ligands.sdf')
-	print "I'M DONE!"
+#def glue_ligands():
+#	os.system('cat '+files_path+'/*.sdf > ../ligands.sdf')
+#	print "I'M DONE!"
+
+def mol2s_to_multisdf():
+    os.system("obabel ../inputfiles/ligands_mol2_all/*.mol2 -osdf -O../inputfiles/ligands2.sdf")
+
+def mol2s_to_multimol():
+    os.system("obabel ../inputfiles/ligands_mol2_all/*.mol2 -omol2 -O../inputfiles/ligands2.mol2")
+    #393 z ze wszystkich nie moze czytac rdkit
+
+def sdfs_to_multisdf():
+    os.system("obabel ../inputfiles/ligands/*.sdf -osdf -O../inputfiles/ligands3.sdf")
+
+def mol2s_to_multismi():
+    os.system("obabel ../inputfiles/ligands_mol2_all/*.mol2 -osmi -O../inputfiles/ligandsFINAL.smi")
 
 def get_ids(file_name):
 	l = []

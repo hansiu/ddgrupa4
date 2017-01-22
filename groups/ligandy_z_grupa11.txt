@@ -246,6 +246,7 @@
 4yzn_ligand
 4z2b_ligand
 4zim_ligand
+4ztn_ligand
 5ar8_ligand
 5dit_ligand
 5ea5_ligand

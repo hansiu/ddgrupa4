@@ -311,6 +311,7 @@
 1ida_ligand
 1idg_ligand
 1ie9_ligand
+1iem_ligand
 1if7_ligand
 1if8_ligand
 1igj_ligand
@@ -324,6 +325,7 @@
 1irs_ligand
 1is0_ligand
 1it6_ligand
+1iup_ligand
 1ivp_ligand
 1iwq_ligand
 1izh_ligand
@@ -756,6 +758,7 @@
 1y19_ligand
 1y1m_ligand
 1y1z_ligand
+1y20_ligand
 1y2a_ligand
 1y3a_ligand
 1y3g_ligand
@@ -770,6 +773,7 @@
 1ycm_ligand
 1yet_ligand
 1yk7_ligand
+1yly_ligand
 1ym2_ligand
 1ym4_ligand
 1ynd_ligand
@@ -915,6 +919,7 @@
 2dbl_ligand
 2ddf_ligand
 2df6_ligand
+2dxs_ligand
 2e7l_ligand
 2e9o_ligand
 2eep_ligand
@@ -1324,6 +1329,7 @@
 2r9b_ligand
 2r9m_ligand
 2r9s_ligand
+2rc9_ligand
 2rfh_ligand
 2rip_ligand
 2rjp_ligand
@@ -2039,6 +2045,7 @@
 3mhc_ligand
 3mj2_ligand
 3mj5_ligand
+3mke_ligand
 3ml4_ligand
 3mnu_ligand
 3mo8_ligand
@@ -2243,6 +2250,7 @@
 3r6g_ligand
 3r7b_ligand
 3r7n_ligand
+3r8i_ligand
 3r91_ligand
 3r92_ligand
 3rbu_ligand
@@ -2471,6 +2479,7 @@
 3vtc_ligand
 3vtd_ligand
 3vuc_ligand
+3vv6_ligand
 3vv7_ligand
 3vv8_ligand
 3vw2_ligand
@@ -3137,6 +3146,7 @@
 4kx8_ligand
 4kxb_ligand
 4kz7_ligand
+4l0l_ligand
 4l1a_ligand
 4l3o_ligand
 4l4l_ligand
@@ -3300,6 +3310,7 @@
 4oas_ligand
 4oba_ligand
 4obv_ligand
+4oc0_ligand
 4ocz_ligand
 4ode_ligand
 4odf_ligand
@@ -3318,6 +3329,7 @@
 4omk_ligand
 4ono_ligand
 4oo9_ligand
+4oon_ligand
 4os1_ligand
 4os2_ligand
 4os4_ligand
@@ -3627,6 +3639,7 @@
 4w9o_ligand
 4w9p_ligand
 4w9q_ligand
+4wbg_ligand
 4wgi_ligand
 4wht_ligand
 4why_ligand
