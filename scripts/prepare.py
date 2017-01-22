@@ -97,3 +97,23 @@ def sort_ligands_groups():
 			os.system('cp '+ligands_mol2+'/'+name+'_ligand.mol2 '+d+'/')
 	print 'ALL DONE!'
 
+def glue_fasta():
+	for directory in sorted(glob.glob(pockets_fasta+'/*')):
+		for file in sorted(glob.glob(directory+'/*.fasta')):
+			f = open(file,'r')
+			flines = [line for line in f]
+			f.close()
+			new_lines = []
+			for i in range(len(flines)):
+				if i==0:
+					new_lines.append(flines[i])
+				elif '>' not in flines[i].split(':'):
+					new_lines.append(flines[i])
+			if len(new_lines) != len(flines):
+				print file, 'zmiana!'
+				os.remove(file)
+				nf = open(file,'w')
+				for line in new_lines:
+					nf.write(line)
+				nf.close()
+
