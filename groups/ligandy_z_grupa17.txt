@@ -1330,7 +1330,7 @@
 2qiq_ligand
 2qk8_ligand
 2qki_ligand
-2QL5_LIGAND
+2ql5_ligand
 2ql7_ligand
 2ql9_ligand
 2qlb_ligand

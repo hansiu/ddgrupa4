@@ -3096,7 +3096,7 @@
 2qk8_ligand
 2qki_ligand
 2qky_ligand
-2QL5_LIGAND
+2ql5_ligand
 2ql7_ligand
 2ql9_ligand
 2qlb_ligand
@@ -5375,7 +5375,7 @@
 3p2k_ligand
 3p3g_ligand
 3p3h_ligand
-3P3J_LIGAND
+3p3j_ligand
 3p3t_ligand
 3p44_ligand
 3p4f_ligand

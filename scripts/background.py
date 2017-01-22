@@ -12,6 +12,7 @@ pockets_fasta = '../files/pockets_fasta'
 
 def count_aa():
 	ids = get_group_dict()
+	print '!!'
 	with open(background+'/all_groups.csv', 'w') as output_groups:
 		for gr in sorted(ids.keys()):
 			aa_all={}
