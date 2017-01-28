@@ -1,0 +1,2 @@
+ligand_names_with_information	0
+ligand_names_without_information	0
