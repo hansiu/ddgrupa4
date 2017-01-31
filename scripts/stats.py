@@ -32,15 +32,25 @@ def dict_from_csv():
     bgaa = csv.reader(bgaafile, delimiter=",")
     for line in bgaa:
         try:
-            bgs_aa[line[0]][line[1]]=1.0-float(line[2])
-        except:
-            bgs_aa[line[0]]={line[1]:1.0-float(line[2])}
+            bgs_aa[line[0]][line[1]]=1.0/float(line[2])
+        except KeyError:
+            try:
+                bgs_aa[line[0]]={line[1]:1.0/float(line[2])}
+            except ZeroDivisionError:
+                bgs_aa[line[0]]={line[1]:float(line[2])}
+        except ZeroDivisionError:
+            bgs_aa[line[0]][line[1]]=float(line[2])
     bgion = csv.reader(bgionfile, delimiter=",")
     for line in bgion:
         try:
-            bgs_ion[line[0]][line[1]]=1.0-float(line[2])
-        except:
-            bgs_ion[line[0]]={line[1]:1.0-float(line[2])}
+            bgs_ion[line[0]][line[1]]=1.0/float(line[2])
+        except KeyError:
+            try:
+                bgs_ion[line[0]]={line[1]:1.0/float(line[2])}
+            except ZeroDivisionError:
+                bgs_ion[line[0]]={line[1]:float(line[2])}
+        except ZeroDivisionError:
+            bgs_ion[line[0]][line[1]]=float(line[2])
 
 def do_calculations_for(rfolder,scale=False):
     wynikiaa={}
