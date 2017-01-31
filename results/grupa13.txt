@@ -30,4 +30,4 @@ ARG	5676
 KCX	3
 TYR	3161
 ligand_names_with_information	2695
-ligand_names_without_information	2695
+ligand_names_without_information	877

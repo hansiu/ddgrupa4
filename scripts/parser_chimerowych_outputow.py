@@ -1,6 +1,6 @@
 from glob import glob
 
-zones_path = "../zones/"
+zones_path = "../zones_3A/"
 
 
 def aminocid_counter(path):
@@ -17,10 +17,10 @@ def aminocid_counter(path):
                         aminoacids[linia.split()[1]] += 1
                     except KeyError:
                         aminoacids[linia.split()[1]] = 0
-                    else:
-                        ligand_names_without_information.add(plik[:-6])
-                    
-    plik = open("../results/"+path[9:]+".txt","w")
+            else:
+                ligand_names_without_information.add(plik[:-6])
+
+    plik = open("../results/"+path[12:]+".txt","w")
     for key in aminoacids:
         plik.write(str(key)+"\t"+str(aminoacids[key])+"\n")
 

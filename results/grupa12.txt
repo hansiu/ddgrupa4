@@ -22,4 +22,4 @@ LEU	110
 ARG	1867
 TYR	749
 ligand_names_with_information	2463
-ligand_names_without_information	2461
+ligand_names_without_information	2987
