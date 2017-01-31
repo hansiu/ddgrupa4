@@ -1,0 +1,23 @@
+Bioisosteric atoms andTextbook of drug design and discovery
+groupings are those that have approximately the same size or molecular volumes so their
+interchange results in similarity in chemical, physical and notably biological properties of
+the resulting analogs. Classical isosteres include interchange of atoms in the same row of
+the periodic chart such as—CH 2 —,—NH—,—O—and—F. Note that hydrogen atoms are
+added to compensate for valence differences.This is known as the Grimm hydride
+displace-ment rule. Over time the definition of isosterism has broadened to include some
+isoelectronic interchanges as well. Examples of this phenomenon include—S—and—
+O—as well as—F,—Cl and—Br. Bioisosteres include the classical isosteres, but
+bioisosteric atoms or groups of atoms do not nescessarily overlap. However, bioisosteres
+show sufficient steric, electronic or other properties to ensure biological activity similar
+to the parent.
+
+An appropriate amide bond replacement should,
+e.g. exhibit similar geometrical, conformational, electrostatical, and hydrogen bonding
+properties as the amide bond itself. Although a large number of amide isosteres are
+known ‘a convincing imitation of the amide bond in the ground state has not yet been
+achieved’ according to Giannis and Kolter.
+
+Furthermore, it has been demonstrated that the catechol/phenol moiety may be
+bioisosterically replaced by, for instance, an indole ring (4.4) or a pyrazole ring (4.5) --> str(96)
+
+
