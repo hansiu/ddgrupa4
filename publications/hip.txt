@@ -11,4 +11,13 @@ bioisosteric atoms or groups of atoms do not nescessarily overlap. However, bioi
 show sufficient steric, electronic or other properties to ensure biological activity similar
 to the parent.
 
+An appropriate amide bond replacement should,
+e.g. exhibit similar geometrical, conformational, electrostatical, and hydrogen bonding
+properties as the amide bond itself. Although a large number of amide isosteres are
+known ‘a convincing imitation of the amide bond in the ground state has not yet been
+achieved’ according to Giannis and Kolter.
+
+Furthermore, it has been demonstrated that the catechol/phenol moiety may be
+bioisosterically replaced by, for instance, an indole ring (4.4) or a pyrazole ring (4.5) --> str(96)
+
 
