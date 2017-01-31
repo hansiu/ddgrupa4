@@ -75,8 +75,8 @@ def do_calculations_for(rfolder,scale=False):
                 else:
                     wynikiaa[i][aa]=int(line[1])
             else:
-                if line[0].startswith('ligands'):
-                    pass
+                if line[0] not in wynikiion[i].keys():
+                    continue
                 if scale:
                 #print(line[0])
                 #print(wagi_ion[line[0]])
