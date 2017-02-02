@@ -1,23 +1,24 @@
-1 - isobutyl
-2 - L-glucose
-3 - aniline~
-4 - benzenol
-5 - cyclohexane
-6 - ethylamine~
-7 - n - propyl~
-8 - ethanol~
-9 - phenyl~
-10 - flourobenzyl
-11 - morpholine
-12 - ethanol
-13 - butan-2-ol~~
-14 - valin-similar~
-15 - 2-pyrrolidinecarboxaldehyde~
-16 - n - propyl
-17 - 2-aminopropanal
-18 - phenylmethanol
-19 - chlorobenzene
-20 - pyrimidine~
+
+1 - isobutyl	hydrophobe	alifatic	Small	Neutral	NULL  		NULL	NULL				
+2 - L-glucose	hydrophile	NULL	Large	Negative	NULL		NULL	NULL
+3 - aniline~	hydrophone	aromatic	Large	Positive	NULL	NULL
+4 - benzenol	hydrophile	aromatic	Large	Negative	NULL	NULL	alcohol
+5 - cyclohexane	hydrophobe	alifatic	Large	Neutral	NULL	NULL	NULL
+6 - ethylamine~	hydrophile	alifatic	Small		Positive	NULL	NULL	NULL
+7 - n - propyl~	hydrophobe	alifatic	Small	Neutral	NULL	NULL	NULL
+8 - ethanol~	hydrophile	alifatic	Small	Negative	NULL	NULL	alcohol	
+9 - phenyl~	hydrophobe	aromatic	Large	Neutral	NULL		NULL	NULL
+10 - flourobenzyl	hydrophobe	aromatic	Large	Neutral?	Fluore	NULL	NULL
+11 - morpholine	hydrophile	heterocyclic	Large	?	?	NULL	heterocyclic	NULL
+12 - ethanol	hydrophile	alifatic	Small	Negative	NULL	NULL	alcohol	
+13 - butan-2-ol~~	hydrophile	alcohol	Large/Small	Negative	NULL	NULL	NULL
+14 - valin-similar~	hyrophobe	alifatic	Large	Neutral	NULL	NULL	NULL	NULL
+15 - 2-pyrrolidinecarboxaldehyde~	hydrophobe	aromatic	Large	Neutral	NULL	NULL	NULL	
+16 - n - propyl	hydrophobe	alifatic	Small	Neutral	NULL	NULL	NULL
+17 - 2-aminopropanal	hydrophile	alifatic	Small	Neutral	NULL	NULL	NULL
+18 - phenylmethanol	hydrophone	aromatic	Large	Negative	NULL	NULL	alcohol
+19 - chlorobenzene	hydrophobe	alifatic	Large	Neutral	Chlorine	NULL	
+20 - pyrimidine~	hydrophobe	aromatic	Large	Neutral	NULL	heterocylic	NULL	
 
 hydrofobowe/filowe
 ładunki
