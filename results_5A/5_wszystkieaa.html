@@ -1,0 +1,2095 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/css/nv.d3.css'>
+    <link rel='stylesheet' href='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/css/rNVD3.css'>
+    
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/jquery-1.8.2.min.js' type='text/javascript'></script>
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart514f15c08e74' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart514f15c08e74()
+    });
+    function drawchart514f15c08e74(){  
+      var opts = {
+ "dom": "chart514f15c08e74",
+"width":    800,
+"height":    400,
+"x": "aminokwas",
+"y": "wartosc",
+"group": "grupa",
+"type": "multiBarChart",
+"id": "chart514f15c08e74" 
+},
+        data = [
+ {
+ "grupa": 1,
+"aminokwas": "A",
+"wartosc": 0.2049365961142 
+},
+{
+ "grupa": 2,
+"aminokwas": "A",
+"wartosc": 0.07220194508971 
+},
+{
+ "grupa": 3,
+"aminokwas": "A",
+"wartosc": 0.332285804342 
+},
+{
+ "grupa": 4,
+"aminokwas": "A",
+"wartosc": 0.473749635575 
+},
+{
+ "grupa": 5,
+"aminokwas": "A",
+"wartosc": 0.02615104518946 
+},
+{
+ "grupa": 6,
+"aminokwas": "A",
+"wartosc": 0.1822106321844 
+},
+{
+ "grupa": 7,
+"aminokwas": "A",
+"wartosc": 0.1022932584651 
+},
+{
+ "grupa": 8,
+"aminokwas": "A",
+"wartosc": 0.0702067725755 
+},
+{
+ "grupa": 9,
+"aminokwas": "A",
+"wartosc": 0.3985349811836 
+},
+{
+ "grupa": 10,
+"aminokwas": "A",
+"wartosc": 0.1314051945567 
+},
+{
+ "grupa": 11,
+"aminokwas": "A",
+"wartosc": 0.06054552391496 
+},
+{
+ "grupa": 12,
+"aminokwas": "A",
+"wartosc": 0.06762077111833 
+},
+{
+ "grupa": 13,
+"aminokwas": "A",
+"wartosc": 0.06920511573486 
+},
+{
+ "grupa": 14,
+"aminokwas": "A",
+"wartosc": 0.4543632322871 
+},
+{
+ "grupa": 15,
+"aminokwas": "A",
+"wartosc": 0.04641683074542 
+},
+{
+ "grupa": 16,
+"aminokwas": "A",
+"wartosc": 0.1223577076518 
+},
+{
+ "grupa": 17,
+"aminokwas": "A",
+"wartosc": 0.08488796306546 
+},
+{
+ "grupa": 18,
+"aminokwas": "A",
+"wartosc": 0.2758166657051 
+},
+{
+ "grupa": 19,
+"aminokwas": "A",
+"wartosc": 0.3668461386139 
+},
+{
+ "grupa": 20,
+"aminokwas": "A",
+"wartosc": 0.8475811285754 
+},
+{
+ "grupa": 1,
+"aminokwas": "C",
+"wartosc": 0.2676430995767 
+},
+{
+ "grupa": 2,
+"aminokwas": "C",
+"wartosc": 0.03295518593369 
+},
+{
+ "grupa": 3,
+"aminokwas": "C",
+"wartosc": 0.4887239452558 
+},
+{
+ "grupa": 4,
+"aminokwas": "C",
+"wartosc": 0.4268947027565 
+},
+{
+ "grupa": 5,
+"aminokwas": "C",
+"wartosc": 0.146582133452 
+},
+{
+ "grupa": 6,
+"aminokwas": "C",
+"wartosc": 0.2259105702166 
+},
+{
+ "grupa": 7,
+"aminokwas": "C",
+"wartosc": 0.1444864522576 
+},
+{
+ "grupa": 8,
+"aminokwas": "C",
+"wartosc": 0.008782773137332 
+},
+{
+ "grupa": 9,
+"aminokwas": "C",
+"wartosc": 0.4822548097102 
+},
+{
+ "grupa": 10,
+"aminokwas": "C",
+"wartosc": 0.1520666791604 
+},
+{
+ "grupa": 11,
+"aminokwas": "C",
+"wartosc":              0 
+},
+{
+ "grupa": 12,
+"aminokwas": "C",
+"wartosc": 0.02712118761292 
+},
+{
+ "grupa": 13,
+"aminokwas": "C",
+"wartosc": 0.1153153488969 
+},
+{
+ "grupa": 14,
+"aminokwas": "C",
+"wartosc": 0.1565695109652 
+},
+{
+ "grupa": 15,
+"aminokwas": "C",
+"wartosc": 0.04708882730706 
+},
+{
+ "grupa": 16,
+"aminokwas": "C",
+"wartosc": 0.1678846541176 
+},
+{
+ "grupa": 17,
+"aminokwas": "C",
+"wartosc": 0.1141497979534 
+},
+{
+ "grupa": 18,
+"aminokwas": "C",
+"wartosc": 0.5220877287191 
+},
+{
+ "grupa": 19,
+"aminokwas": "C",
+"wartosc": 0.9596250630358 
+},
+{
+ "grupa": 20,
+"aminokwas": "C",
+"wartosc": 0.491842137384 
+},
+{
+ "grupa": 1,
+"aminokwas": "D",
+"wartosc": 0.3717974398287 
+},
+{
+ "grupa": 2,
+"aminokwas": "D",
+"wartosc": 0.6228819927124 
+},
+{
+ "grupa": 3,
+"aminokwas": "D",
+"wartosc": 0.2918851243896 
+},
+{
+ "grupa": 4,
+"aminokwas": "D",
+"wartosc": 0.3860267885621 
+},
+{
+ "grupa": 5,
+"aminokwas": "D",
+"wartosc": 0.1982598132901 
+},
+{
+ "grupa": 6,
+"aminokwas": "D",
+"wartosc": 0.4955562677281 
+},
+{
+ "grupa": 7,
+"aminokwas": "D",
+"wartosc": 0.4073234348477 
+},
+{
+ "grupa": 8,
+"aminokwas": "D",
+"wartosc": 0.3805936574874 
+},
+{
+ "grupa": 9,
+"aminokwas": "D",
+"wartosc": 0.2423230007892 
+},
+{
+ "grupa": 10,
+"aminokwas": "D",
+"wartosc": 0.4519471777338 
+},
+{
+ "grupa": 11,
+"aminokwas": "D",
+"wartosc": 0.1524170414114 
+},
+{
+ "grupa": 12,
+"aminokwas": "D",
+"wartosc": 0.3994978477169 
+},
+{
+ "grupa": 13,
+"aminokwas": "D",
+"wartosc": 0.3778039229896 
+},
+{
+ "grupa": 14,
+"aminokwas": "D",
+"wartosc": 0.9011377911176 
+},
+{
+ "grupa": 15,
+"aminokwas": "D",
+"wartosc": 0.06839770529448 
+},
+{
+ "grupa": 16,
+"aminokwas": "D",
+"wartosc": 0.4416971763023 
+},
+{
+ "grupa": 17,
+"aminokwas": "D",
+"wartosc": 0.2426406023095 
+},
+{
+ "grupa": 18,
+"aminokwas": "D",
+"wartosc": 0.7140450995509 
+},
+{
+ "grupa": 19,
+"aminokwas": "D",
+"wartosc": 0.309052364252 
+},
+{
+ "grupa": 20,
+"aminokwas": "D",
+"wartosc": 0.4511461715089 
+},
+{
+ "grupa": 1,
+"aminokwas": "E",
+"wartosc": 0.1588734221777 
+},
+{
+ "grupa": 2,
+"aminokwas": "E",
+"wartosc": 0.5979741126426 
+},
+{
+ "grupa": 3,
+"aminokwas": "E",
+"wartosc": 0.05854906523687 
+},
+{
+ "grupa": 4,
+"aminokwas": "E",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"aminokwas": "E",
+"wartosc": 0.06889330168989 
+},
+{
+ "grupa": 6,
+"aminokwas": "E",
+"wartosc": 0.2554321203624 
+},
+{
+ "grupa": 7,
+"aminokwas": "E",
+"wartosc": 0.2804622909621 
+},
+{
+ "grupa": 8,
+"aminokwas": "E",
+"wartosc": 0.3108374638221 
+},
+{
+ "grupa": 9,
+"aminokwas": "E",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"aminokwas": "E",
+"wartosc": 0.2229185534639 
+},
+{
+ "grupa": 11,
+"aminokwas": "E",
+"wartosc": 0.3540242008182 
+},
+{
+ "grupa": 12,
+"aminokwas": "E",
+"wartosc":  0.28678318644 
+},
+{
+ "grupa": 13,
+"aminokwas": "E",
+"wartosc": 0.4560745520974 
+},
+{
+ "grupa": 14,
+"aminokwas": "E",
+"wartosc": 0.06968346079328 
+},
+{
+ "grupa": 15,
+"aminokwas": "E",
+"wartosc": 0.08795349342132 
+},
+{
+ "grupa": 16,
+"aminokwas": "E",
+"wartosc": 0.2862404264419 
+},
+{
+ "grupa": 17,
+"aminokwas": "E",
+"wartosc": 0.1754921119117 
+},
+{
+ "grupa": 18,
+"aminokwas": "E",
+"wartosc": 0.1206062284521 
+},
+{
+ "grupa": 19,
+"aminokwas": "E",
+"wartosc": 0.06758231851536 
+},
+{
+ "grupa": 20,
+"aminokwas": "E",
+"wartosc": 0.5132264983696 
+},
+{
+ "grupa": 1,
+"aminokwas": "F",
+"wartosc": 0.5074319252457 
+},
+{
+ "grupa": 2,
+"aminokwas": "F",
+"wartosc": 0.2771491674429 
+},
+{
+ "grupa": 3,
+"aminokwas": "F",
+"wartosc": 0.4544973745161 
+},
+{
+ "grupa": 4,
+"aminokwas": "F",
+"wartosc": 0.9759911254853 
+},
+{
+ "grupa": 5,
+"aminokwas": "F",
+"wartosc": 0.5072884735884 
+},
+{
+ "grupa": 6,
+"aminokwas": "F",
+"wartosc": 0.1890186968891 
+},
+{
+ "grupa": 7,
+"aminokwas": "F",
+"wartosc": 0.2607405851454 
+},
+{
+ "grupa": 8,
+"aminokwas": "F",
+"wartosc": 0.1881722848699 
+},
+{
+ "grupa": 9,
+"aminokwas": "F",
+"wartosc": 0.7356549079559 
+},
+{
+ "grupa": 10,
+"aminokwas": "F",
+"wartosc": 0.6245547050107 
+},
+{
+ "grupa": 11,
+"aminokwas": "F",
+"wartosc": 0.3429005009682 
+},
+{
+ "grupa": 12,
+"aminokwas": "F",
+"wartosc": 0.2172675914452 
+},
+{
+ "grupa": 13,
+"aminokwas": "F",
+"wartosc": 0.2644652984562 
+},
+{
+ "grupa": 14,
+"aminokwas": "F",
+"wartosc": 0.1499030113664 
+},
+{
+ "grupa": 15,
+"aminokwas": "F",
+"wartosc": 0.1908082149895 
+},
+{
+ "grupa": 16,
+"aminokwas": "F",
+"wartosc": 0.2603415292187 
+},
+{
+ "grupa": 17,
+"aminokwas": "F",
+"wartosc": 0.1755574363341 
+},
+{
+ "grupa": 18,
+"aminokwas": "F",
+"wartosc": 0.6945969699515 
+},
+{
+ "grupa": 19,
+"aminokwas": "F",
+"wartosc": 0.7319252936244 
+},
+{
+ "grupa": 20,
+"aminokwas": "F",
+"wartosc": 0.8246350764551 
+},
+{
+ "grupa": 1,
+"aminokwas": "G",
+"wartosc": 0.3545117265695 
+},
+{
+ "grupa": 2,
+"aminokwas": "G",
+"wartosc": 0.1802273414434 
+},
+{
+ "grupa": 3,
+"aminokwas": "G",
+"wartosc": 0.1562385157032 
+},
+{
+ "grupa": 4,
+"aminokwas": "G",
+"wartosc": 0.2687623320319 
+},
+{
+ "grupa": 5,
+"aminokwas": "G",
+"wartosc": 0.06733788964244 
+},
+{
+ "grupa": 6,
+"aminokwas": "G",
+"wartosc": 0.4026186738196 
+},
+{
+ "grupa": 7,
+"aminokwas": "G",
+"wartosc": 0.2709334596817 
+},
+{
+ "grupa": 8,
+"aminokwas": "G",
+"wartosc": 0.2328801100739 
+},
+{
+ "grupa": 9,
+"aminokwas": "G",
+"wartosc": 0.2397831544296 
+},
+{
+ "grupa": 10,
+"aminokwas": "G",
+"wartosc": 0.04800044338325 
+},
+{
+ "grupa": 11,
+"aminokwas": "G",
+"wartosc": 0.2219375683804 
+},
+{
+ "grupa": 12,
+"aminokwas": "G",
+"wartosc": 0.2463673119796 
+},
+{
+ "grupa": 13,
+"aminokwas": "G",
+"wartosc": 0.1400965378319 
+},
+{
+ "grupa": 14,
+"aminokwas": "G",
+"wartosc": 0.6990253680729 
+},
+{
+ "grupa": 15,
+"aminokwas": "G",
+"wartosc": 0.1294126741741 
+},
+{
+ "grupa": 16,
+"aminokwas": "G",
+"wartosc": 0.3152266399397 
+},
+{
+ "grupa": 17,
+"aminokwas": "G",
+"wartosc": 0.2375025932005 
+},
+{
+ "grupa": 18,
+"aminokwas": "G",
+"wartosc": 0.3045735263026 
+},
+{
+ "grupa": 19,
+"aminokwas": "G",
+"wartosc": 0.499385160144 
+},
+{
+ "grupa": 20,
+"aminokwas": "G",
+"wartosc": 0.2449354341815 
+},
+{
+ "grupa": 1,
+"aminokwas": "H",
+"wartosc":  0.70702218195 
+},
+{
+ "grupa": 2,
+"aminokwas": "H",
+"wartosc": 0.5256517035901 
+},
+{
+ "grupa": 3,
+"aminokwas": "H",
+"wartosc": 0.3667769220999 
+},
+{
+ "grupa": 4,
+"aminokwas": "H",
+"wartosc": 0.5637695276524 
+},
+{
+ "grupa": 5,
+"aminokwas": "H",
+"wartosc": 0.5417235288749 
+},
+{
+ "grupa": 6,
+"aminokwas": "H",
+"wartosc": 0.4998353838645 
+},
+{
+ "grupa": 7,
+"aminokwas": "H",
+"wartosc": 0.510792206631 
+},
+{
+ "grupa": 8,
+"aminokwas": "H",
+"wartosc": 0.383553741206 
+},
+{
+ "grupa": 9,
+"aminokwas": "H",
+"wartosc": 0.3794336752315 
+},
+{
+ "grupa": 10,
+"aminokwas": "H",
+"wartosc": 0.7021156463099 
+},
+{
+ "grupa": 11,
+"aminokwas": "H",
+"wartosc": 0.166088891098 
+},
+{
+ "grupa": 12,
+"aminokwas": "H",
+"wartosc": 0.4021942454817 
+},
+{
+ "grupa": 13,
+"aminokwas": "H",
+"wartosc": 0.572726080817 
+},
+{
+ "grupa": 14,
+"aminokwas": "H",
+"wartosc": 0.5634360389323 
+},
+{
+ "grupa": 15,
+"aminokwas": "H",
+"wartosc": 0.5456215966729 
+},
+{
+ "grupa": 16,
+"aminokwas": "H",
+"wartosc": 0.5238885556787 
+},
+{
+ "grupa": 17,
+"aminokwas": "H",
+"wartosc": 0.5541583081551 
+},
+{
+ "grupa": 18,
+"aminokwas": "H",
+"wartosc": 0.3218496894953 
+},
+{
+ "grupa": 19,
+"aminokwas": "H",
+"wartosc": 0.1613419398403 
+},
+{
+ "grupa": 20,
+"aminokwas": "H",
+"wartosc": 0.3202737582158 
+},
+{
+ "grupa": 1,
+"aminokwas": "I",
+"wartosc": 0.4613373419694 
+},
+{
+ "grupa": 2,
+"aminokwas": "I",
+"wartosc": 0.1381575439864 
+},
+{
+ "grupa": 3,
+"aminokwas": "I",
+"wartosc": 0.1006218224032 
+},
+{
+ "grupa": 4,
+"aminokwas": "I",
+"wartosc": 0.3928077290167 
+},
+{
+ "grupa": 5,
+"aminokwas": "I",
+"wartosc": 0.1842560132601 
+},
+{
+ "grupa": 6,
+"aminokwas": "I",
+"wartosc": 0.231640267861 
+},
+{
+ "grupa": 7,
+"aminokwas": "I",
+"wartosc": 0.1844170062367 
+},
+{
+ "grupa": 8,
+"aminokwas": "I",
+"wartosc":  0.11362658513 
+},
+{
+ "grupa": 9,
+"aminokwas": "I",
+"wartosc": 0.393216240193 
+},
+{
+ "grupa": 10,
+"aminokwas": "I",
+"wartosc": 0.7264274197629 
+},
+{
+ "grupa": 11,
+"aminokwas": "I",
+"wartosc": 0.5953964161444 
+},
+{
+ "grupa": 12,
+"aminokwas": "I",
+"wartosc": 0.140860497613 
+},
+{
+ "grupa": 13,
+"aminokwas": "I",
+"wartosc": 0.04829841092102 
+},
+{
+ "grupa": 14,
+"aminokwas": "I",
+"wartosc":              1 
+},
+{
+ "grupa": 15,
+"aminokwas": "I",
+"wartosc": 0.03018956649806 
+},
+{
+ "grupa": 16,
+"aminokwas": "I",
+"wartosc": 0.2064539968192 
+},
+{
+ "grupa": 17,
+"aminokwas": "I",
+"wartosc": 0.1238571707376 
+},
+{
+ "grupa": 18,
+"aminokwas": "I",
+"wartosc": 0.3737891862576 
+},
+{
+ "grupa": 19,
+"aminokwas": "I",
+"wartosc": 0.3864633604018 
+},
+{
+ "grupa": 20,
+"aminokwas": "I",
+"wartosc": 0.5307573733706 
+},
+{
+ "grupa": 1,
+"aminokwas": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"aminokwas": "K",
+"wartosc": 0.6514133020098 
+},
+{
+ "grupa": 3,
+"aminokwas": "K",
+"wartosc": 0.01648694298066 
+},
+{
+ "grupa": 4,
+"aminokwas": "K",
+"wartosc": 0.07256202656839 
+},
+{
+ "grupa": 5,
+"aminokwas": "K",
+"wartosc": 0.02934922045103 
+},
+{
+ "grupa": 6,
+"aminokwas": "K",
+"wartosc": 0.1456250610151 
+},
+{
+ "grupa": 7,
+"aminokwas": "K",
+"wartosc": 0.1376337606795 
+},
+{
+ "grupa": 8,
+"aminokwas": "K",
+"wartosc": 0.3190134319975 
+},
+{
+ "grupa": 9,
+"aminokwas": "K",
+"wartosc": 0.06981120628715 
+},
+{
+ "grupa": 10,
+"aminokwas": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"aminokwas": "K",
+"wartosc": 0.1019030059662 
+},
+{
+ "grupa": 12,
+"aminokwas": "K",
+"wartosc": 0.277849473982 
+},
+{
+ "grupa": 13,
+"aminokwas": "K",
+"wartosc": 0.2939344612781 
+},
+{
+ "grupa": 14,
+"aminokwas": "K",
+"wartosc": 0.1173452323423 
+},
+{
+ "grupa": 15,
+"aminokwas": "K",
+"wartosc": 0.07830394031057 
+},
+{
+ "grupa": 16,
+"aminokwas": "K",
+"wartosc": 0.1479571495739 
+},
+{
+ "grupa": 17,
+"aminokwas": "K",
+"wartosc": 0.2666629771008 
+},
+{
+ "grupa": 18,
+"aminokwas": "K",
+"wartosc": 0.02582236850405 
+},
+{
+ "grupa": 19,
+"aminokwas": "K",
+"wartosc": 0.06783928265621 
+},
+{
+ "grupa": 20,
+"aminokwas": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"aminokwas": "L",
+"wartosc": 0.4632126663709 
+},
+{
+ "grupa": 2,
+"aminokwas": "L",
+"wartosc": 0.1572318044685 
+},
+{
+ "grupa": 3,
+"aminokwas": "L",
+"wartosc": 0.4221265894611 
+},
+{
+ "grupa": 4,
+"aminokwas": "L",
+"wartosc": 0.8410434346974 
+},
+{
+ "grupa": 5,
+"aminokwas": "L",
+"wartosc": 0.3724146920905 
+},
+{
+ "grupa": 6,
+"aminokwas": "L",
+"wartosc": 0.09189940209769 
+},
+{
+ "grupa": 7,
+"aminokwas": "L",
+"wartosc": 0.1414833670102 
+},
+{
+ "grupa": 8,
+"aminokwas": "L",
+"wartosc": 0.003176557176941 
+},
+{
+ "grupa": 9,
+"aminokwas": "L",
+"wartosc": 0.6645833008605 
+},
+{
+ "grupa": 10,
+"aminokwas": "L",
+"wartosc": 0.9340439617976 
+},
+{
+ "grupa": 11,
+"aminokwas": "L",
+"wartosc": 0.2925593685833 
+},
+{
+ "grupa": 12,
+"aminokwas": "L",
+"wartosc": 0.007162548412934 
+},
+{
+ "grupa": 13,
+"aminokwas": "L",
+"wartosc": 0.03304308000423 
+},
+{
+ "grupa": 14,
+"aminokwas": "L",
+"wartosc": 0.1636790061699 
+},
+{
+ "grupa": 15,
+"aminokwas": "L",
+"wartosc": 0.07114248129403 
+},
+{
+ "grupa": 16,
+"aminokwas": "L",
+"wartosc": 0.1350338894368 
+},
+{
+ "grupa": 17,
+"aminokwas": "L",
+"wartosc": 0.09521342348774 
+},
+{
+ "grupa": 18,
+"aminokwas": "L",
+"wartosc": 0.4582757431863 
+},
+{
+ "grupa": 19,
+"aminokwas": "L",
+"wartosc": 0.4893033594853 
+},
+{
+ "grupa": 20,
+"aminokwas": "L",
+"wartosc": 0.6486828710205 
+},
+{
+ "grupa": 1,
+"aminokwas": "M",
+"wartosc": 0.9575051045799 
+},
+{
+ "grupa": 2,
+"aminokwas": "M",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"aminokwas": "M",
+"wartosc": 0.4635362556291 
+},
+{
+ "grupa": 4,
+"aminokwas": "M",
+"wartosc": 0.9871000208419 
+},
+{
+ "grupa": 5,
+"aminokwas": "M",
+"wartosc": 0.9563174020773 
+},
+{
+ "grupa": 6,
+"aminokwas": "M",
+"wartosc": 0.1648853761375 
+},
+{
+ "grupa": 7,
+"aminokwas": "M",
+"wartosc": 0.2738120471917 
+},
+{
+ "grupa": 8,
+"aminokwas": "M",
+"wartosc": 0.047419342735 
+},
+{
+ "grupa": 9,
+"aminokwas": "M",
+"wartosc": 0.7561916474679 
+},
+{
+ "grupa": 10,
+"aminokwas": "M",
+"wartosc": 0.7553804378079 
+},
+{
+ "grupa": 11,
+"aminokwas": "M",
+"wartosc": 0.5152002414375 
+},
+{
+ "grupa": 12,
+"aminokwas": "M",
+"wartosc": 0.05994777744393 
+},
+{
+ "grupa": 13,
+"aminokwas": "M",
+"wartosc": 0.08930833182737 
+},
+{
+ "grupa": 14,
+"aminokwas": "M",
+"wartosc": 0.3009471549576 
+},
+{
+ "grupa": 15,
+"aminokwas": "M",
+"wartosc": 0.2162438017623 
+},
+{
+ "grupa": 16,
+"aminokwas": "M",
+"wartosc": 0.2522597938201 
+},
+{
+ "grupa": 17,
+"aminokwas": "M",
+"wartosc": 0.1771906618052 
+},
+{
+ "grupa": 18,
+"aminokwas": "M",
+"wartosc": 0.6826037227211 
+},
+{
+ "grupa": 19,
+"aminokwas": "M",
+"wartosc": 0.5369086660167 
+},
+{
+ "grupa": 20,
+"aminokwas": "M",
+"wartosc":              1 
+},
+{
+ "grupa": 1,
+"aminokwas": "N",
+"wartosc": 0.2147463192799 
+},
+{
+ "grupa": 2,
+"aminokwas": "N",
+"wartosc": 0.6419685084681 
+},
+{
+ "grupa": 3,
+"aminokwas": "N",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"aminokwas": "N",
+"wartosc": 0.204455943953 
+},
+{
+ "grupa": 5,
+"aminokwas": "N",
+"wartosc": 0.2677124570075 
+},
+{
+ "grupa": 6,
+"aminokwas": "N",
+"wartosc": 0.2736231448781 
+},
+{
+ "grupa": 7,
+"aminokwas": "N",
+"wartosc": 0.3131394987748 
+},
+{
+ "grupa": 8,
+"aminokwas": "N",
+"wartosc": 0.383861399483 
+},
+{
+ "grupa": 9,
+"aminokwas": "N",
+"wartosc": 0.06784731421535 
+},
+{
+ "grupa": 10,
+"aminokwas": "N",
+"wartosc": 0.09216799321557 
+},
+{
+ "grupa": 11,
+"aminokwas": "N",
+"wartosc":  0.36676198486 
+},
+{
+ "grupa": 12,
+"aminokwas": "N",
+"wartosc": 0.3620740404291 
+},
+{
+ "grupa": 13,
+"aminokwas": "N",
+"wartosc": 0.3933441711111 
+},
+{
+ "grupa": 14,
+"aminokwas": "N",
+"wartosc": 0.2029297187512 
+},
+{
+ "grupa": 15,
+"aminokwas": "N",
+"wartosc": 0.2904635959101 
+},
+{
+ "grupa": 16,
+"aminokwas": "N",
+"wartosc": 0.3112939766631 
+},
+{
+ "grupa": 17,
+"aminokwas": "N",
+"wartosc": 0.3477692917101 
+},
+{
+ "grupa": 18,
+"aminokwas": "N",
+"wartosc": 0.3377670400899 
+},
+{
+ "grupa": 19,
+"aminokwas": "N",
+"wartosc": 0.2779419952638 
+},
+{
+ "grupa": 20,
+"aminokwas": "N",
+"wartosc": 0.2816533530269 
+},
+{
+ "grupa": 1,
+"aminokwas": "P",
+"wartosc": 0.04649773245499 
+},
+{
+ "grupa": 2,
+"aminokwas": "P",
+"wartosc": 0.1102225795012 
+},
+{
+ "grupa": 3,
+"aminokwas": "P",
+"wartosc": 0.1367392324542 
+},
+{
+ "grupa": 4,
+"aminokwas": "P",
+"wartosc": 0.2679558989968 
+},
+{
+ "grupa": 5,
+"aminokwas": "P",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"aminokwas": "P",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"aminokwas": "P",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"aminokwas": "P",
+"wartosc": 0.03844778363292 
+},
+{
+ "grupa": 9,
+"aminokwas": "P",
+"wartosc": 0.2302870676078 
+},
+{
+ "grupa": 10,
+"aminokwas": "P",
+"wartosc": 0.2760185111797 
+},
+{
+ "grupa": 11,
+"aminokwas": "P",
+"wartosc": 0.05729378275211 
+},
+{
+ "grupa": 12,
+"aminokwas": "P",
+"wartosc": 0.03476161302505 
+},
+{
+ "grupa": 13,
+"aminokwas": "P",
+"wartosc": 0.0001248395266445 
+},
+{
+ "grupa": 14,
+"aminokwas": "P",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"aminokwas": "P",
+"wartosc": 0.05979982092862 
+},
+{
+ "grupa": 16,
+"aminokwas": "P",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"aminokwas": "P",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"aminokwas": "P",
+"wartosc": 0.4902949985183 
+},
+{
+ "grupa": 19,
+"aminokwas": "P",
+"wartosc": 0.1797312710653 
+},
+{
+ "grupa": 20,
+"aminokwas": "P",
+"wartosc": 0.2391560786534 
+},
+{
+ "grupa": 1,
+"aminokwas": "Q",
+"wartosc":  0.29853805892 
+},
+{
+ "grupa": 2,
+"aminokwas": "Q",
+"wartosc": 0.492744987155 
+},
+{
+ "grupa": 3,
+"aminokwas": "Q",
+"wartosc": 0.2205847932095 
+},
+{
+ "grupa": 4,
+"aminokwas": "Q",
+"wartosc": 0.4918826820569 
+},
+{
+ "grupa": 5,
+"aminokwas": "Q",
+"wartosc": 0.3471925401407 
+},
+{
+ "grupa": 6,
+"aminokwas": "Q",
+"wartosc": 0.3801103406065 
+},
+{
+ "grupa": 7,
+"aminokwas": "Q",
+"wartosc": 0.2693557729277 
+},
+{
+ "grupa": 8,
+"aminokwas": "Q",
+"wartosc": 0.2979160275911 
+},
+{
+ "grupa": 9,
+"aminokwas": "Q",
+"wartosc": 0.4575698974648 
+},
+{
+ "grupa": 10,
+"aminokwas": "Q",
+"wartosc": 0.2586122268359 
+},
+{
+ "grupa": 11,
+"aminokwas": "Q",
+"wartosc": 0.3915844170435 
+},
+{
+ "grupa": 12,
+"aminokwas": "Q",
+"wartosc": 0.3135868495815 
+},
+{
+ "grupa": 13,
+"aminokwas": "Q",
+"wartosc": 0.3174276709094 
+},
+{
+ "grupa": 14,
+"aminokwas": "Q",
+"wartosc": 0.2984838733861 
+},
+{
+ "grupa": 15,
+"aminokwas": "Q",
+"wartosc": 0.2047787351895 
+},
+{
+ "grupa": 16,
+"aminokwas": "Q",
+"wartosc": 0.2995381663785 
+},
+{
+ "grupa": 17,
+"aminokwas": "Q",
+"wartosc": 0.3762731271593 
+},
+{
+ "grupa": 18,
+"aminokwas": "Q",
+"wartosc": 0.464028781529 
+},
+{
+ "grupa": 19,
+"aminokwas": "Q",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"aminokwas": "Q",
+"wartosc": 0.4285551447285 
+},
+{
+ "grupa": 1,
+"aminokwas": "R",
+"wartosc": 0.401601828255 
+},
+{
+ "grupa": 2,
+"aminokwas": "R",
+"wartosc": 0.5804786243901 
+},
+{
+ "grupa": 3,
+"aminokwas": "R",
+"wartosc": 0.1431117239502 
+},
+{
+ "grupa": 4,
+"aminokwas": "R",
+"wartosc": 0.367496805934 
+},
+{
+ "grupa": 5,
+"aminokwas": "R",
+"wartosc": 0.5669787185681 
+},
+{
+ "grupa": 6,
+"aminokwas": "R",
+"wartosc": 0.4538244520712 
+},
+{
+ "grupa": 7,
+"aminokwas": "R",
+"wartosc": 0.491796321659 
+},
+{
+ "grupa": 8,
+"aminokwas": "R",
+"wartosc": 0.6300745366091 
+},
+{
+ "grupa": 9,
+"aminokwas": "R",
+"wartosc": 0.2562589852958 
+},
+{
+ "grupa": 10,
+"aminokwas": "R",
+"wartosc":  0.27767374971 
+},
+{
+ "grupa": 11,
+"aminokwas": "R",
+"wartosc": 0.202757380105 
+},
+{
+ "grupa": 12,
+"aminokwas": "R",
+"wartosc": 0.6572454666749 
+},
+{
+ "grupa": 13,
+"aminokwas": "R",
+"wartosc": 0.5187523961807 
+},
+{
+ "grupa": 14,
+"aminokwas": "R",
+"wartosc": 0.511589683818 
+},
+{
+ "grupa": 15,
+"aminokwas": "R",
+"wartosc": 0.2311668313968 
+},
+{
+ "grupa": 16,
+"aminokwas": "R",
+"wartosc": 0.5103127119876 
+},
+{
+ "grupa": 17,
+"aminokwas": "R",
+"wartosc": 0.4750300589694 
+},
+{
+ "grupa": 18,
+"aminokwas": "R",
+"wartosc": 0.9666584142795 
+},
+{
+ "grupa": 19,
+"aminokwas": "R",
+"wartosc": 0.1410148106271 
+},
+{
+ "grupa": 20,
+"aminokwas": "R",
+"wartosc": 0.1563778009289 
+},
+{
+ "grupa": 1,
+"aminokwas": "S",
+"wartosc": 0.2464655517248 
+},
+{
+ "grupa": 2,
+"aminokwas": "S",
+"wartosc": 0.1469464288479 
+},
+{
+ "grupa": 3,
+"aminokwas": "S",
+"wartosc": 0.1087708569516 
+},
+{
+ "grupa": 4,
+"aminokwas": "S",
+"wartosc": 0.2369956811965 
+},
+{
+ "grupa": 5,
+"aminokwas": "S",
+"wartosc": 0.1282129672355 
+},
+{
+ "grupa": 6,
+"aminokwas": "S",
+"wartosc": 0.2496068097401 
+},
+{
+ "grupa": 7,
+"aminokwas": "S",
+"wartosc": 0.1846734034148 
+},
+{
+ "grupa": 8,
+"aminokwas": "S",
+"wartosc": 0.1475832912382 
+},
+{
+ "grupa": 9,
+"aminokwas": "S",
+"wartosc": 0.1344229840982 
+},
+{
+ "grupa": 10,
+"aminokwas": "S",
+"wartosc": 0.1746105112702 
+},
+{
+ "grupa": 11,
+"aminokwas": "S",
+"wartosc": 0.205474995891 
+},
+{
+ "grupa": 12,
+"aminokwas": "S",
+"wartosc": 0.1348266417375 
+},
+{
+ "grupa": 13,
+"aminokwas": "S",
+"wartosc": 0.1388916434059 
+},
+{
+ "grupa": 14,
+"aminokwas": "S",
+"wartosc": 0.3334108451501 
+},
+{
+ "grupa": 15,
+"aminokwas": "S",
+"wartosc": 0.2450124556652 
+},
+{
+ "grupa": 16,
+"aminokwas": "S",
+"wartosc": 0.2051557991681 
+},
+{
+ "grupa": 17,
+"aminokwas": "S",
+"wartosc": 0.2073319716982 
+},
+{
+ "grupa": 18,
+"aminokwas": "S",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"aminokwas": "S",
+"wartosc": 0.3280255132851 
+},
+{
+ "grupa": 20,
+"aminokwas": "S",
+"wartosc": 0.3362398742308 
+},
+{
+ "grupa": 1,
+"aminokwas": "T",
+"wartosc": 0.167903497053 
+},
+{
+ "grupa": 2,
+"aminokwas": "T",
+"wartosc": 0.3485873377047 
+},
+{
+ "grupa": 3,
+"aminokwas": "T",
+"wartosc": 0.09413530714275 
+},
+{
+ "grupa": 4,
+"aminokwas": "T",
+"wartosc": 0.2521769594929 
+},
+{
+ "grupa": 5,
+"aminokwas": "T",
+"wartosc": 0.02528207957082 
+},
+{
+ "grupa": 6,
+"aminokwas": "T",
+"wartosc": 0.2183878824979 
+},
+{
+ "grupa": 7,
+"aminokwas": "T",
+"wartosc": 0.1606171199824 
+},
+{
+ "grupa": 8,
+"aminokwas": "T",
+"wartosc": 0.1560150022171 
+},
+{
+ "grupa": 9,
+"aminokwas": "T",
+"wartosc": 0.1174254425681 
+},
+{
+ "grupa": 10,
+"aminokwas": "T",
+"wartosc": 0.5832348522294 
+},
+{
+ "grupa": 11,
+"aminokwas": "T",
+"wartosc": 0.08679920548222 
+},
+{
+ "grupa": 12,
+"aminokwas": "T",
+"wartosc": 0.1490306993538 
+},
+{
+ "grupa": 13,
+"aminokwas": "T",
+"wartosc": 0.09503539938342 
+},
+{
+ "grupa": 14,
+"aminokwas": "T",
+"wartosc": 0.1496786690939 
+},
+{
+ "grupa": 15,
+"aminokwas": "T",
+"wartosc": 0.1671793779094 
+},
+{
+ "grupa": 16,
+"aminokwas": "T",
+"wartosc": 0.1871540848381 
+},
+{
+ "grupa": 17,
+"aminokwas": "T",
+"wartosc": 0.1778652260159 
+},
+{
+ "grupa": 18,
+"aminokwas": "T",
+"wartosc": 0.1870822332695 
+},
+{
+ "grupa": 19,
+"aminokwas": "T",
+"wartosc": 0.07981777805625 
+},
+{
+ "grupa": 20,
+"aminokwas": "T",
+"wartosc": 0.3852108367813 
+},
+{
+ "grupa": 1,
+"aminokwas": "V",
+"wartosc": 0.2354322935189 
+},
+{
+ "grupa": 2,
+"aminokwas": "V",
+"wartosc": 0.03299732859133 
+},
+{
+ "grupa": 3,
+"aminokwas": "V",
+"wartosc": 0.08821010514694 
+},
+{
+ "grupa": 4,
+"aminokwas": "V",
+"wartosc": 0.3412779320549 
+},
+{
+ "grupa": 5,
+"aminokwas": "V",
+"wartosc": 0.09333238231452 
+},
+{
+ "grupa": 6,
+"aminokwas": "V",
+"wartosc": 0.03804348637566 
+},
+{
+ "grupa": 7,
+"aminokwas": "V",
+"wartosc": 0.04859877626501 
+},
+{
+ "grupa": 8,
+"aminokwas": "V",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"aminokwas": "V",
+"wartosc": 0.2602084152687 
+},
+{
+ "grupa": 10,
+"aminokwas": "V",
+"wartosc": 0.7494089991266 
+},
+{
+ "grupa": 11,
+"aminokwas": "V",
+"wartosc": 0.2737426408736 
+},
+{
+ "grupa": 12,
+"aminokwas": "V",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"aminokwas": "V",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"aminokwas": "V",
+"wartosc": 0.2521594295555 
+},
+{
+ "grupa": 15,
+"aminokwas": "V",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"aminokwas": "V",
+"wartosc": 0.05483642274826 
+},
+{
+ "grupa": 17,
+"aminokwas": "V",
+"wartosc": 0.02696214198796 
+},
+{
+ "grupa": 18,
+"aminokwas": "V",
+"wartosc": 0.1408178917258 
+},
+{
+ "grupa": 19,
+"aminokwas": "V",
+"wartosc": 0.5478522990907 
+},
+{
+ "grupa": 20,
+"aminokwas": "V",
+"wartosc": 0.573155174912 
+},
+{
+ "grupa": 1,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 2,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 3,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 4,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 5,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 6,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 7,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 8,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 9,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 10,
+"aminokwas": "W",
+"wartosc": 0.7769338986257 
+},
+{
+ "grupa": 11,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 12,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 13,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 14,
+"aminokwas": "W",
+"wartosc": 0.5095400162693 
+},
+{
+ "grupa": 15,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 16,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 17,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 18,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 19,
+"aminokwas": "W",
+"wartosc":              1 
+},
+{
+ "grupa": 20,
+"aminokwas": "W",
+"wartosc": 0.7565533559817 
+},
+{
+ "grupa": 1,
+"aminokwas": "Y",
+"wartosc": 0.826216705967 
+},
+{
+ "grupa": 2,
+"aminokwas": "Y",
+"wartosc": 0.5298888667706 
+},
+{
+ "grupa": 3,
+"aminokwas": "Y",
+"wartosc": 0.516461427412 
+},
+{
+ "grupa": 4,
+"aminokwas": "Y",
+"wartosc": 0.8121215766099 
+},
+{
+ "grupa": 5,
+"aminokwas": "Y",
+"wartosc": 0.8131893979898 
+},
+{
+ "grupa": 6,
+"aminokwas": "Y",
+"wartosc": 0.6963586471172 
+},
+{
+ "grupa": 7,
+"aminokwas": "Y",
+"wartosc": 0.6352252213082 
+},
+{
+ "grupa": 8,
+"aminokwas": "Y",
+"wartosc": 0.4933601566135 
+},
+{
+ "grupa": 9,
+"aminokwas": "Y",
+"wartosc": 0.7372812661754 
+},
+{
+ "grupa": 10,
+"aminokwas": "Y",
+"wartosc":              1 
+},
+{
+ "grupa": 11,
+"aminokwas": "Y",
+"wartosc": 0.4396681514696 
+},
+{
+ "grupa": 12,
+"aminokwas": "Y",
+"wartosc": 0.5226323672056 
+},
+{
+ "grupa": 13,
+"aminokwas": "Y",
+"wartosc": 0.6014318076745 
+},
+{
+ "grupa": 14,
+"aminokwas": "Y",
+"wartosc": 0.5776468015785 
+},
+{
+ "grupa": 15,
+"aminokwas": "Y",
+"wartosc": 0.6414618881294 
+},
+{
+ "grupa": 16,
+"aminokwas": "Y",
+"wartosc": 0.6754017116163 
+},
+{
+ "grupa": 17,
+"aminokwas": "Y",
+"wartosc": 0.6718912938321 
+},
+{
+ "grupa": 18,
+"aminokwas": "Y",
+"wartosc": 0.6596684436408 
+},
+{
+ "grupa": 19,
+"aminokwas": "Y",
+"wartosc": 0.5433558933273 
+},
+{
+ "grupa": 20,
+"aminokwas": "Y",
+"wartosc": 0.8077048765219 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

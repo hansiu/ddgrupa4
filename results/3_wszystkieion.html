@@ -1,0 +1,2395 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/css/nv.d3.css'>
+    <link rel='stylesheet' href='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/css/rNVD3.css'>
+    
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/jquery-1.8.2.min.js' type='text/javascript'></script>
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='/home/hania/R/x86_64-pc-linux-gnu-library/3.2/rCharts/libraries/nvd3/js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart514fa62e9ad' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart514fa62e9ad()
+    });
+    function drawchart514fa62e9ad(){  
+      var opts = {
+ "dom": "chart514fa62e9ad",
+"width":    800,
+"height":    400,
+"x": "heteroatom",
+"y": "wartosc",
+"group": "grupa",
+"type": "multiBarChart",
+"id": "chart514fa62e9ad" 
+},
+        data = [
+ {
+ "grupa": 1,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "CA",
+"wartosc":              1 
+},
+{
+ "grupa": 3,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "CA",
+"wartosc":              1 
+},
+{
+ "grupa": 6,
+"heteroatom": "CA",
+"wartosc": 0.02682648401835 
+},
+{
+ "grupa": 7,
+"heteroatom": "CA",
+"wartosc": 0.7910906298023 
+},
+{
+ "grupa": 8,
+"heteroatom": "CA",
+"wartosc":              1 
+},
+{
+ "grupa": 9,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CA",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CA",
+"wartosc":              1 
+},
+{
+ "grupa": 14,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CA",
+"wartosc":              1 
+},
+{
+ "grupa": 16,
+"heteroatom": "CA",
+"wartosc": 0.5278745644594 
+},
+{
+ "grupa": 17,
+"heteroatom": "CA",
+"wartosc": 0.1061946902654 
+},
+{
+ "grupa": 18,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CA",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CAF",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CAF",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CAS",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CAS",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "CD",
+"wartosc": 0.1000000000003 
+},
+{
+ "grupa": 5,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "CD",
+"wartosc": 0.02976190476193 
+},
+{
+ "grupa": 7,
+"heteroatom": "CD",
+"wartosc": 0.1363636363637 
+},
+{
+ "grupa": 8,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CD",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CD",
+"wartosc": 0.5271428571435 
+},
+{
+ "grupa": 14,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "CD",
+"wartosc": 0.1818181818183 
+},
+{
+ "grupa": 17,
+"heteroatom": "CD",
+"wartosc": 0.1111111111108 
+},
+{
+ "grupa": 18,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CD",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "CO",
+"wartosc": 0.3030303030307 
+},
+{
+ "grupa": 2,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "CO",
+"wartosc": 0.04882812500005 
+},
+{
+ "grupa": 7,
+"heteroatom": "CO",
+"wartosc": 0.6549865229112 
+},
+{
+ "grupa": 8,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CO",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CO",
+"wartosc": 0.2049999999998 
+},
+{
+ "grupa": 14,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "CO",
+"wartosc": 0.793103448277 
+},
+{
+ "grupa": 17,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CO",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CO",
+"wartosc": 0.458333333333 
+},
+{
+ "grupa": 1,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CS",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CS",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "CSD",
+"wartosc": 0.3250000000012 
+},
+{
+ "grupa": 7,
+"heteroatom": "CSD",
+"wartosc": 0.4285714285708 
+},
+{
+ "grupa": 8,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CSD",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "CSD",
+"wartosc": 0.499999999999 
+},
+{
+ "grupa": 17,
+"heteroatom": "CSD",
+"wartosc":           0.75 
+},
+{
+ "grupa": 18,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CSD",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "CU",
+"wartosc":              1 
+},
+{
+ "grupa": 4,
+"heteroatom": "CU",
+"wartosc":              1 
+},
+{
+ "grupa": 5,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "CU",
+"wartosc": 0.3750000000011 
+},
+{
+ "grupa": 7,
+"heteroatom": "CU",
+"wartosc":              1 
+},
+{
+ "grupa": 8,
+"heteroatom": "CU",
+"wartosc": 0.3763736263738 
+},
+{
+ "grupa": 9,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "CU",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "CU",
+"wartosc":              1 
+},
+{
+ "grupa": 17,
+"heteroatom": "CU",
+"wartosc": 0.6666666666667 
+},
+{
+ "grupa": 18,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "CU",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "CU",
+"wartosc":              1 
+},
+{
+ "grupa": 1,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "DAL",
+"wartosc":              1 
+},
+{
+ "grupa": 7,
+"heteroatom": "DAL",
+"wartosc": 0.7500000000014 
+},
+{
+ "grupa": 8,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "DAL",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "DAL",
+"wartosc": 0.6249999999995 
+},
+{
+ "grupa": 17,
+"heteroatom": "DAL",
+"wartosc":              1 
+},
+{
+ "grupa": 18,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "DAL",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "FE",
+"wartosc":              1 
+},
+{
+ "grupa": 2,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "FE",
+"wartosc": 0.4631578947371 
+},
+{
+ "grupa": 5,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "FE",
+"wartosc": 0.1617647058827 
+},
+{
+ "grupa": 7,
+"heteroatom": "FE",
+"wartosc": 0.6825396825374 
+},
+{
+ "grupa": 8,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "FE",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "FE",
+"wartosc": 0.8448275862081 
+},
+{
+ "grupa": 17,
+"heteroatom": "FE",
+"wartosc": 0.2499999999993 
+},
+{
+ "grupa": 18,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "FE",
+"wartosc":              1 
+},
+{
+ "grupa": 20,
+"heteroatom": "FE",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "FE2",
+"wartosc": 0.1111111111113 
+},
+{
+ "grupa": 7,
+"heteroatom": "FE2",
+"wartosc": 0.5238095238095 
+},
+{
+ "grupa": 8,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "FE2",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "FE2",
+"wartosc": 0.5500000000002 
+},
+{
+ "grupa": 17,
+"heteroatom": "FE2",
+"wartosc":            0.5 
+},
+{
+ "grupa": 18,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "FE2",
+"wartosc":              1 
+},
+{
+ "grupa": 20,
+"heteroatom": "FE2",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "GA",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "GA",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "HG",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "HG",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "K",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "K",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "MG",
+"wartosc": 0.1298701298704 
+},
+{
+ "grupa": 2,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "MG",
+"wartosc": 0.1411764705879 
+},
+{
+ "grupa": 5,
+"heteroatom": "MG",
+"wartosc": 0.1333333333338 
+},
+{
+ "grupa": 6,
+"heteroatom": "MG",
+"wartosc": 0.01725941422602 
+},
+{
+ "grupa": 7,
+"heteroatom": "MG",
+"wartosc": 0.09035645205846 
+},
+{
+ "grupa": 8,
+"heteroatom": "MG",
+"wartosc": 0.07304286010481 
+},
+{
+ "grupa": 9,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "MG",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "MG",
+"wartosc": 0.2149014778325 
+},
+{
+ "grupa": 13,
+"heteroatom": "MG",
+"wartosc": 0.07279591836722 
+},
+{
+ "grupa": 14,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "MG",
+"wartosc": 0.09242957746486 
+},
+{
+ "grupa": 17,
+"heteroatom": "MG",
+"wartosc": 0.02564102564101 
+},
+{
+ "grupa": 18,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "MG",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "MN",
+"wartosc": 0.1683501683505 
+},
+{
+ "grupa": 2,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "MN",
+"wartosc":           0.32 
+},
+{
+ "grupa": 5,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "MN",
+"wartosc": 0.0360169491526 
+},
+{
+ "grupa": 7,
+"heteroatom": "MN",
+"wartosc": 0.3920972644382 
+},
+{
+ "grupa": 8,
+"heteroatom": "MN",
+"wartosc": 0.1536218883158 
+},
+{
+ "grupa": 9,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "MN",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "MN",
+"wartosc": 0.2913743218809 
+},
+{
+ "grupa": 14,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "MN",
+"wartosc": 0.3904958677706 
+},
+{
+ "grupa": 17,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "MN",
+"wartosc":              1 
+},
+{
+ "grupa": 19,
+"heteroatom": "MN",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "MN",
+"wartosc": 0.1333333333333 
+},
+{
+ "grupa": 1,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "MSE",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "MSE",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "NA.",
+"wartosc": 0.1541666666666 
+},
+{
+ "grupa": 3,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "NA.",
+"wartosc": 0.004934210526323 
+},
+{
+ "grupa": 7,
+"heteroatom": "NA.",
+"wartosc": 0.2608695652176 
+},
+{
+ "grupa": 8,
+"heteroatom": "NA.",
+"wartosc": 0.6086041617957 
+},
+{
+ "grupa": 9,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "NA.",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "NA.",
+"wartosc": 0.2820676691727 
+},
+{
+ "grupa": 14,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "NA.",
+"wartosc": 0.1702127659576 
+},
+{
+ "grupa": 17,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "NA.",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "NI",
+"wartosc": 0.5194805194816 
+},
+{
+ "grupa": 2,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "NI",
+"wartosc": 0.1654411764709 
+},
+{
+ "grupa": 7,
+"heteroatom": "NI",
+"wartosc": 0.7065637065634 
+},
+{
+ "grupa": 8,
+"heteroatom": "NI",
+"wartosc": 0.250915750915 
+},
+{
+ "grupa": 9,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "NI",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "NI",
+"wartosc": 0.241607142857 
+},
+{
+ "grupa": 14,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "NI",
+"wartosc": 0.716216216216 
+},
+{
+ "grupa": 17,
+"heteroatom": "NI",
+"wartosc": 0.08333333333311 
+},
+{
+ "grupa": 18,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "NI",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "SEP",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "SEP",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "SR",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "SR",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 2,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 4,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 5,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 7,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 8,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 9,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 10,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 11,
+"heteroatom": "TPO",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 13,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 14,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 15,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 16,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 17,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 18,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 19,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "TPO",
+"wartosc":              0 
+},
+{
+ "grupa": 1,
+"heteroatom": "ZN",
+"wartosc": 0.6161357823782 
+},
+{
+ "grupa": 2,
+"heteroatom": "ZN",
+"wartosc":              0 
+},
+{
+ "grupa": 3,
+"heteroatom": "ZN",
+"wartosc": 0.0800000000001 
+},
+{
+ "grupa": 4,
+"heteroatom": "ZN",
+"wartosc": 0.02184300341297 
+},
+{
+ "grupa": 5,
+"heteroatom": "ZN",
+"wartosc":              0 
+},
+{
+ "grupa": 6,
+"heteroatom": "ZN",
+"wartosc": 0.09417040358754 
+},
+{
+ "grupa": 7,
+"heteroatom": "ZN",
+"wartosc": 0.4661410018552 
+},
+{
+ "grupa": 8,
+"heteroatom": "ZN",
+"wartosc": 0.2414957056594 
+},
+{
+ "grupa": 9,
+"heteroatom": "ZN",
+"wartosc":              1 
+},
+{
+ "grupa": 10,
+"heteroatom": "ZN",
+"wartosc":              1 
+},
+{
+ "grupa": 11,
+"heteroatom": "ZN",
+"wartosc":            0.5 
+},
+{
+ "grupa": 12,
+"heteroatom": "ZN",
+"wartosc":              1 
+},
+{
+ "grupa": 13,
+"heteroatom": "ZN",
+"wartosc": 0.2211788211791 
+},
+{
+ "grupa": 14,
+"heteroatom": "ZN",
+"wartosc":              1 
+},
+{
+ "grupa": 15,
+"heteroatom": "ZN",
+"wartosc": 0.2192307692312 
+},
+{
+ "grupa": 16,
+"heteroatom": "ZN",
+"wartosc": 0.5135135135136 
+},
+{
+ "grupa": 17,
+"heteroatom": "ZN",
+"wartosc": 0.3251121076229 
+},
+{
+ "grupa": 18,
+"heteroatom": "ZN",
+"wartosc": 0.4666666666667 
+},
+{
+ "grupa": 19,
+"heteroatom": "ZN",
+"wartosc":              0 
+},
+{
+ "grupa": 20,
+"heteroatom": "ZN",
+"wartosc":              0 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

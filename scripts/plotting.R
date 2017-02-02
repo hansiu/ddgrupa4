@@ -1,9 +1,8 @@
 library(ggplot2)
 library(rCharts)
 library(gridExtra)
-
-#musisz sobie tu wpisać swój folder ddgrupa4 mój wykomentuj
-
+library(scales)
+library(tidyr)
 
 inicjalizuj <- function(angs=3){
   #tu ustawiam folder w którym pracuję
@@ -33,24 +32,37 @@ inicjalizuj <- function(angs=3){
   #znalezione jakiekolwiek otoczenia/dla ilu nie?
 }
 
-porownaj_wagi <- function(angs=3){
-  inicjalizuj(angs)
-    
+przygotuj_i_zrob_ladniusi_wykres <- function(angs=3){
+  divaa <- data.frame(div_aa)
+  divion <- data.frame(div_ion)
   for(i in 1:20){
-    dane <- data.frame(aa[aa$grupa==i,2:21])
-    rownames(dane) <- c("aa")
-    dane["min_aa",] <- min_aa[min_aa$grupa==i,2:21]
-    dane["div_aa",] <- div_aa[div_aa$grupa==i,2:21]
-    dane["aaprobs",] <- t(aaprobs[aaprobs$V1==paste0("grupa",toString(1)),3])
-    dane <- as.matrix(t(dane))
-    #barplot(dane, beside=TRUE, col = c("blue","red","green"))
-    barplot(dane[,"aa"], col="blue",main = paste0("aa grupa",toString(i)))
-    barplot(dane[,"min_aa"], col="red",main = paste0("min_aa grupa",toString(i)))
-    barplot(dane[,"div_aa"], col="green",main = paste0("div_aa grupa",toString(i)))
-    barplot(dane[,"aaprobs"], col="yellow",main = paste0("aaprobs grupa",toString(i)))
+    danea <- data.frame(div_aa[div_aa$grupa==i,2:21])
+    divaa[i,2:21] <- rescale(as.matrix(danea))
+    danei <- data.frame(div_ion[div_ion$grupa==i,2:24])
+    divion[i,2:24] <- rescale(as.matrix(danei))
+    
+  
   }
-  #horiz = True?
+  divaa <- gather(divaa, 'aminokwas','wartosc', -grupa)
+  wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'grupa', data = divaa, type = 'multiBarChart')
+  wszystkieaa$save(paste0(toString(angs),'_wszystkieaa.html'))
+  
+  divion <- gather(divion, 'heteroatom','wartosc', -grupa)
+  wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'grupa', data = divion, type = 'multiBarChart')
+  wszystkieion$save(paste0(toString(angs),'_wszystkieion.html'))
+  
+  #prwdp trzebaby dla osobnych grup
+  #prawdopodobienstwa <- nPlot(V3 ~ V2, group = 'grupa', data = aaprobs, type = 'pieChart')
+  
 }
 
-porownaj_wagi()
-porownaj_wagi(5)
+
+
+
+
+inicjalizuj()
+przygotuj_i_zrob_ladniusi_wykres()
+inicjalizuj(5)
+przygotuj_i_zrob_ladniusi_wykres(5)
+#porownaj_wagi()
+#porownaj_wagi(5)
