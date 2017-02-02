@@ -6,14 +6,16 @@ library(tidyr)
 inicjalizuj <- function(angs=3){
   #tu ustawiam folder w którym pracuję
   #musisz sobie tu wpisać swój folder ddgrupa4 mój wykomentuj
-  #setwd("Asiowe")
-  setwd("/home/hania/ProjLek/ddgrupa4")
+  setwd("/home/joanna/Pulpit/Leki_projekt/ddgrupa4")
+  #setwd("/home/hania/ProjLek/ddgrupa4")
   
   if(angs==3){
-    setwd("results")
+    #setwd("results")
+    setwd("zones")
   } else
   {
-    setwd("results_5A")
+    #setwd("results_5A")
+    setwd("zones_5A")
   }
   
   #wiem że brzydko globalne, ale robie tu bo a) wygodnie, b) to nie na zaliczenie u Bieceła przeca.
@@ -66,10 +68,37 @@ przygotuj_i_zrob_ladniusie_wykresy <- function(angs=3){
   
   #wszystkie
   wykresl_wszystkie(divaa,divion,angs)
+}
   
+ciastki_aa <- function(angs=3){
   #prwdp trzebaby dla osobnych grup
-  #prawdopodobienstwa <- nPlot(V3 ~ V2, group = 'grupa', data = aaprobs, type = 'pieChart')
-  
+  colnames(aaprobs) <- c("grupa","aminoacid","probability")
+  prawdopodobienstwa <- ggplot(data = aaprobs, aes(x="", y=probability, fill=aminoacid)) +
+    geom_bar(width = 1, stat = "identity") +
+    coord_polar("y", start=0) +
+    facet_wrap("grupa") +
+    scale_fill_manual(
+      values = c("A"="#e41a1c", "C"="#33a02c", "D"="#6a3d9a", "E"="#ff7f00", "F"="#1f78b4", "G"="#b15928", "H"="#01665e", "I"="#c51b7d", "K"="#08306b", "L"="#d6604d", "M"="#6a51a3", "N"="#66bd63", "P"="#9970ab", "Q"="#feb24c", "R"="#003c30", "S"="#f1b6da", "T"="#9e0142", "V"="#66c2a5", "W"="#bababa", "Y"="#fc4e2a")) +
+    theme(axis.text.x=element_blank(), axis.title.x = element_blank(), axis.ticks.y = element_blank(), axis.text.y=element_blank(), axis.title.y = element_blank()) +
+    ggtitle("Probability of aminoacid presence in pockets")
+  #grupa1 <- filter(aaprobs, grupa == "grupa1")
+  #prawdopodobienstwa1 <- nPlot(prawdopodobienstwo ~ aminokwas, data = grupa1, type = 'pieChart')
+  #prawdopodobienstwa1$chart(showLegend = FALSE)
+  #prawdopodobienstwa1$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+  #wszystkieaa$set(title = "Heteroatom occurence in ligand environment")
+}
+
+ciastki_ion <- function(angs=3){
+  #prwdp trzebaby dla osobnych grup
+  colnames(ionprobs) <- c("grupa","heteroatom","probability")
+  prawdopodobienstwa <- ggplot(data = ionprobs, aes(x="", y=probability, fill=heteroatom)) +
+    geom_bar(width = 1, stat = "identity") +
+    coord_polar("y", start=0) +
+    facet_wrap("grupa") +
+    scale_fill_manual(
+      values = c("CA"="#e41a1c", "CAF"="#33a02c", "CAS"="#6a3d9a", "CD"="#ff7f00", "CO"="#1f78b4", "CS"="#b15928", "CSD"="#01665e", "CU"="#c51b7d", "DAL"="#08306b", "FE"="#d6604d", "FE2"="#6a51a3", "GA"="#66bd63", "HG"="#9970ab", "K"="#feb24c", "MG"="#003c30", "MC"="#f1b6da", "MSE"="#9e0142", "NI"="#66c2a5", "SEP"="#bababa", "SR"="#fc4e2a", "TPO"="#E69F00", "ZN"="#191970", "MN"="#ADFF2F", "NA"="#FF00FF")) +
+    theme(axis.text.x=element_blank(), axis.title.x = element_blank(), axis.ticks.y = element_blank(), axis.text.y=element_blank(), axis.title.y = element_blank()) +
+    ggtitle("Probability of heteroatom presence in pockets")
 }
 
 wykresl_wszystkie <- function(divaa,divion,angs=3){
@@ -94,7 +123,11 @@ wykresl_wszystkie <- function(divaa,divion,angs=3){
 
 inicjalizuj()
 przygotuj_i_zrob_ladniusie_wykresy()
+ciastki_aa()
+ciastki_ion()
 inicjalizuj(5)
 przygotuj_i_zrob_ladniusie_wykresy(5)
+ciastki_aa(5)
+ciastki_ion(5)
 #porownaj_wagi()
 #porownaj_wagi(5)
