@@ -71,16 +71,21 @@ przygotuj_i_zrob_ladniusie_wykresy <- function(angs=3){
 }
   
 ciastki_aa <- function(angs=3){
-  #prwdp trzebaby dla osobnych grup
-  colnames(aaprobs) <- c("grupa","aminoacid","probability")
-  prawdopodobienstwa <- ggplot(data = aaprobs, aes(x="", y=probability, fill=aminoacid)) +
+  colnames(aaprobs) <<- c("grupa","aminoacid","probability")
+  #Tu podmień na swoją ścieżkę do tego pliku z naszego repo (folder inputfiles)
+  grupowanie <- as.data.frame(read.csv("~/Pulpit/Leki_projekt/ddgrupa4/grupy_przygototwane_1.csv"))
+  aaprobab <- cbind(aaprobs,grupowanie)
+  prawdopodobienstwa <- ggplot(data = aaprobab, aes(x="", y=probability, fill=aminoacid)) +
     geom_bar(width = 1, stat = "identity") +
     coord_polar("y", start=0) +
-    facet_wrap("grupa") +
+    facet_wrap("Name") +
     scale_fill_manual(
       values = c("A"="#e41a1c", "C"="#33a02c", "D"="#6a3d9a", "E"="#ff7f00", "F"="#1f78b4", "G"="#b15928", "H"="#01665e", "I"="#c51b7d", "K"="#08306b", "L"="#d6604d", "M"="#6a51a3", "N"="#66bd63", "P"="#9970ab", "Q"="#feb24c", "R"="#003c30", "S"="#f1b6da", "T"="#9e0142", "V"="#66c2a5", "W"="#bababa", "Y"="#fc4e2a")) +
     theme(axis.text.x=element_blank(), axis.title.x = element_blank(), axis.ticks.y = element_blank(), axis.text.y=element_blank(), axis.title.y = element_blank()) +
     ggtitle("Probability of aminoacid presence in pockets")
+  pdf(file = paste0("ciastki_aa_",as.character(angs),".pdf"), paper = "a4")
+  prawdopodobienstwa
+  dev.off()
   #grupa1 <- filter(aaprobs, grupa == "grupa1")
   #prawdopodobienstwa1 <- nPlot(prawdopodobienstwo ~ aminokwas, data = grupa1, type = 'pieChart')
   #prawdopodobienstwa1$chart(showLegend = FALSE)
@@ -89,28 +94,46 @@ ciastki_aa <- function(angs=3){
 }
 
 ciastki_ion <- function(angs=3){
-  #prwdp trzebaby dla osobnych grup
   colnames(ionprobs) <- c("grupa","heteroatom","probability")
-  prawdopodobienstwa <- ggplot(data = ionprobs, aes(x="", y=probability, fill=heteroatom)) +
+  #Tu podmień na swoją ścieżkę do tego pliku z naszego repo (folder inputfiles)
+  grupowanie <- as.data.frame(read.csv("~/Pulpit/Leki_projekt/ddgrupa4/grupy_przygototwane_2.csv"))
+  ionprobab <- cbind(aaprobs,grupowanie)
+  prawdopodobienstwa <- ggplot(data = ionprobab, aes(x="", y=probability, fill=heteroatom)) +
     geom_bar(width = 1, stat = "identity") +
     coord_polar("y", start=0) +
-    facet_wrap("grupa") +
+    facet_wrap("Name") +
     scale_fill_manual(
       values = c("CA"="#e41a1c", "CAF"="#33a02c", "CAS"="#6a3d9a", "CD"="#ff7f00", "CO"="#1f78b4", "CS"="#b15928", "CSD"="#01665e", "CU"="#c51b7d", "DAL"="#08306b", "FE"="#d6604d", "FE2"="#6a51a3", "GA"="#66bd63", "HG"="#9970ab", "K"="#feb24c", "MG"="#003c30", "MC"="#f1b6da", "MSE"="#9e0142", "NI"="#66c2a5", "SEP"="#bababa", "SR"="#fc4e2a", "TPO"="#E69F00", "ZN"="#191970", "MN"="#ADFF2F", "NA"="#FF00FF")) +
     theme(axis.text.x=element_blank(), axis.title.x = element_blank(), axis.ticks.y = element_blank(), axis.text.y=element_blank(), axis.title.y = element_blank()) +
     ggtitle("Probability of heteroatom presence in pockets")
 }
+#Tutaj jest funkcja, która robi dataframe o wielkości odpowiedniej dla
+#zgatherowanych danych odpowiednio jonów lub aminokwasów.
+#Można jej użyć bezpośrednio jako argumentu do cbind'a i wtedy będzie odpowiednia ramka danych.
+dodaj_grupowanie(angs = 3, dataset){
+  #Podaj swoją ścieżkę!!!
+  grupy <- as.data.frame(read.csv("~/Pulpit/Leki_projekt/ddgrupa4/podzial_grup.csv"))
+  if(dataset == "aa"){
+    grupy <- rbind(grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy)
+  }
+  if(dataset == "ion"){
+    grupy <- rbind(grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy)
+  }
+  return(grupy)
+}
 
 wykresl_wszystkie <- function(divaa,divion,angs=3){
   divaa <- gather(divaa, 'aminokwas','wartosc', -grupa)
-  wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'grupa', data = divaa, type = 'multiBarChart')
-  wszystkieaa$xAxis( axisLabel = "aminoacid")
+  divaa <- cbind(divaa,dodaj_grupowanie(angs,"aa"))
+  wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'Name', data = divaa, type = 'multiBarChart')
+  wszystkieaa$xAxis(axisLabel = "aminoacid")
   wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieaa$set(title = "Aminoacid occurence in ligand environment")
   wszystkieaa$save(paste0(toString(angs),'_wszystkieaa.html'))
   
   divion <- gather(divion, 'heteroatom','wartosc', -grupa)
-  wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'grupa', data = divion, type = 'multiBarChart')
+  divion <- cbind(divion,dodaj_grupowanie(angs,"ion"))
+  wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'Name', data = divion, type = 'multiBarChart')
   wszystkieion$xAxis( axisLabel = "heteroatom")
   wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieaa$set(title = "Heteroatom occurence in ligand environment")
