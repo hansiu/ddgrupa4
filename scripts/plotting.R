@@ -6,16 +6,16 @@ library(tidyr)
 inicjalizuj <- function(angs=3){
   #tu ustawiam folder w którym pracuję
   #musisz sobie tu wpisać swój folder ddgrupa4 mój wykomentuj
-  setwd("/home/joanna/Pulpit/Leki_projekt/ddgrupa4")
-  #setwd("/home/hania/ProjLek/ddgrupa4")
+  #setwd("/home/joanna/Pulpit/Leki_projekt/ddgrupa4")
+  setwd("/home/hania/ProjLek/ddgrupa4")
   
   if(angs==3){
-    #setwd("results")
-    setwd("zones")
+    setwd("results")
+    #setwd("zones")
   } else
   {
-    #setwd("results_5A")
-    setwd("zones_5A")
+    setwd("results_5A")
+    #setwd("zones_5A")
   }
   
   #wiem że brzydko globalne, ale robie tu bo a) wygodnie, b) to nie na zaliczenie u Bieceła przeca.
@@ -73,7 +73,7 @@ przygotuj_i_zrob_ladniusie_wykresy <- function(angs=3){
 ciastki_aa <- function(angs=3){
   colnames(aaprobs) <<- c("grupa","aminoacid","probability")
   #Tu podmień na swoją ścieżkę do tego pliku z naszego repo (folder inputfiles)
-  grupowanie <- as.data.frame(read.csv("~/Pulpit/Leki_projekt/ddgrupa4/grupy_przygototwane_1.csv"))
+  grupowanie <- as.data.frame(read.csv("~/ProjLek/ddgrupa4/inputfiles/grupy_przygototwane_1.csv"))
   aaprobab <- cbind(aaprobs,grupowanie)
   prawdopodobienstwa <- ggplot(data = aaprobab, aes(x="", y=probability, fill=aminoacid)) +
     geom_bar(width = 1, stat = "identity") +
@@ -86,6 +86,7 @@ ciastki_aa <- function(angs=3){
   pdf(file = paste0("ciastki_aa_",as.character(angs),".pdf"), paper = "a4")
   prawdopodobienstwa
   dev.off()
+  ggsave(paste0("ciastki_aa_",as.character(angs),".pdf"), plot= prawdopodobienstwa, device = 'pdf')
   #grupa1 <- filter(aaprobs, grupa == "grupa1")
   #prawdopodobienstwa1 <- nPlot(prawdopodobienstwo ~ aminokwas, data = grupa1, type = 'pieChart')
   #prawdopodobienstwa1$chart(showLegend = FALSE)
@@ -96,8 +97,8 @@ ciastki_aa <- function(angs=3){
 ciastki_ion <- function(angs=3){
   colnames(ionprobs) <- c("grupa","heteroatom","probability")
   #Tu podmień na swoją ścieżkę do tego pliku z naszego repo (folder inputfiles)
-  grupowanie <- as.data.frame(read.csv("~/Pulpit/Leki_projekt/ddgrupa4/grupy_przygototwane_2.csv"))
-  ionprobab <- cbind(aaprobs,grupowanie)
+  grupowanie <- as.data.frame(read.csv("~/ProjLek/ddgrupa4/inputfiles/grupy_przygototwane_2.csv"))
+  ionprobab <- cbind(ionprobs,grupowanie)
   prawdopodobienstwa <- ggplot(data = ionprobab, aes(x="", y=probability, fill=heteroatom)) +
     geom_bar(width = 1, stat = "identity") +
     coord_polar("y", start=0) +
@@ -106,13 +107,16 @@ ciastki_ion <- function(angs=3){
       values = c("CA"="#e41a1c", "CAF"="#33a02c", "CAS"="#6a3d9a", "CD"="#ff7f00", "CO"="#1f78b4", "CS"="#b15928", "CSD"="#01665e", "CU"="#c51b7d", "DAL"="#08306b", "FE"="#d6604d", "FE2"="#6a51a3", "GA"="#66bd63", "HG"="#9970ab", "K"="#feb24c", "MG"="#003c30", "MC"="#f1b6da", "MSE"="#9e0142", "NI"="#66c2a5", "SEP"="#bababa", "SR"="#fc4e2a", "TPO"="#E69F00", "ZN"="#191970", "MN"="#ADFF2F", "NA"="#FF00FF")) +
     theme(axis.text.x=element_blank(), axis.title.x = element_blank(), axis.ticks.y = element_blank(), axis.text.y=element_blank(), axis.title.y = element_blank()) +
     ggtitle("Probability of heteroatom presence in pockets")
+  ggsave(paste0("ciastki_ion_",as.character(angs),".pdf"), plot= prawdopodobienstwa, device = 'pdf')
+  
+  
 }
 #Tutaj jest funkcja, która robi dataframe o wielkości odpowiedniej dla
 #zgatherowanych danych odpowiednio jonów lub aminokwasów.
 #Można jej użyć bezpośrednio jako argumentu do cbind'a i wtedy będzie odpowiednia ramka danych.
-dodaj_grupowanie(angs = 3, dataset){
+dodaj_grupowanie <- function(angs = 3, dataset){
   #Podaj swoją ścieżkę!!!
-  grupy <- as.data.frame(read.csv("~/Pulpit/Leki_projekt/ddgrupa4/podzial_grup.csv"))
+  grupy <- as.data.frame(read.csv("~/ProjLek/ddgrupa4/inputfiles/podzial_grup.csv"))
   if(dataset == "aa"){
     grupy <- rbind(grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy,grupy)
   }
@@ -148,9 +152,8 @@ inicjalizuj()
 przygotuj_i_zrob_ladniusie_wykresy()
 ciastki_aa()
 ciastki_ion()
+porownaj_wagi()
 inicjalizuj(5)
 przygotuj_i_zrob_ladniusie_wykresy(5)
 ciastki_aa(5)
 ciastki_ion(5)
-#porownaj_wagi()
-#porownaj_wagi(5)
