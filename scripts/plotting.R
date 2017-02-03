@@ -135,7 +135,7 @@ wykresl_wszystkie <- function(divaa,divion,angs=3){
   wszystkieaa$xAxis(axisLabel = "aminoacid")
   wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieaa$set(title = "Aminoacid occurence in ligand environment")
-  wszystkieaa$save(paste0(toString(angs),'_wszystkieaa.html'))
+  wszystkieaa$save(paste0("plots/",toString(angs),'_wszystkieaa.html'))
   
   divion <- gather(divion, 'heteroatom','wartosc', -grupa)
   divion <- cbind(divion,dodaj_grupowanie(angs,"ion"))
@@ -143,25 +143,33 @@ wykresl_wszystkie <- function(divaa,divion,angs=3){
   wszystkieion$xAxis( axisLabel = "heteroatom")
   wszystkieion$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieion$set(title = "Heteroatom occurence in ligand environment")
-  wszystkieion$save(paste0(toString(angs),'_wszystkieion.html'))
+  wszystkieion$save(paste0("plots/",toString(angs),'_wszystkieion.html'))
 }
 
 wykresl_grupami <- function(divaa,divion,angs = 3){
+  
   divaa <- gather(divaa, 'aminokwas','wartosc', -grupa)
   divaa <- cbind(divaa,dodaj_grupowanie(angs,"aa"))
-  wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'Hydro', data = divaa, type = 'multiBarChart')
+  for(x in colnames(divaa)[6:12]){
+    for (typ in as.character(unique(divaa[x])[,1])){
+  wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'Name', data = divaa[divaa[x]==typ,], type = 'multiBarChart')
   wszystkieaa$xAxis(axisLabel = "aminoacid")
   wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieaa$set(title = "Aminoacid occurence in ligand environment")
-  wszystkieaa$save(paste0(toString(angs),'Hydro','_wszystkieaa.html'))
+  wszystkieaa$save(paste0("plots/",toString(angs),typ,'_wszystkieaa.html'))
+    }}
   
   divion <- gather(divion, 'heteroatom','wartosc', -grupa)
   divion <- cbind(divion,dodaj_grupowanie(angs,"ion"))
-  wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'Hydro', data = divion, type = 'multiBarChart')
+  for(x in colnames(divion)[6:12]){
+    for (typ in as.character(unique(divion[x])[,1])){
+  wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'Name', data = divion[divion[x]==typ,], type = 'multiBarChart')
   wszystkieion$xAxis( axisLabel = "heteroatom")
   wszystkieion$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieion$set(title = "Heteroatom occurence in ligand environment")
-  wszystkieion$save(paste0(toString(angs),'Hydro','_wszystkieion.html'))
+  wszystkieion$save(paste0("plots/",toString(angs),typ,'_wszystkieion.html'))
+  }
+  }
 }
 
 
