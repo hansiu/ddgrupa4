@@ -5,7 +5,7 @@ Group,Name,Hydro,Chain,Size,Charge,Heteroatom,Heterochain,Alcohol
 4,phenol,hydrophilic,aromatic,Large,Negative,NULL,NULL,alcohol
 5,cyclohexanyl,hydrophobic,alifatic,Large,Neutral,NULL,NULL,NULL
 6,ethylamine (2xR),hydrophilic,alifatic,Small,Positive,NULL,NULL,amin
-7,n – propyl (2xR),hydrophobic,alifatic,Small,Neutral,NULL,NULL,NULL
+7,n-propyl (2xR),hydrophobic,alifatic,Small,Neutral,NULL,NULL,NULL
 8,ethanol (2xR),hydrophilic,alifatic,Small,Negative,NULL,NULL,alcohol
 9,phenyl (2xR),hydrophobic,aromatic,Large,Neutral,NULL,NULL,NULL
 10,flourobenzyl (2xR),hydrophobic,aromatic,Large,Neutral,Fluore,NULL,NULL
@@ -13,9 +13,9 @@ Group,Name,Hydro,Chain,Size,Charge,Heteroatom,Heterochain,Alcohol
 12,ethanol,hydrophilic,alifatic,Small,Negative,NULL,NULL,alcohol
 13,butan-2-ol (3xR),hydrophilic,alifatic,Small,Negative,NULL,NULL,alcohol
 14,valin-similar (2xR),hydrophilic,alifatic,Large,Neutral,NULL,NULL,NULL
-15,2-pyrrolidinecarboxaldehyde (2xR),hydrophilic,alifatic,Large,Neutral,NULL,hetrocyclic,aldehyde
-16,n - propyl,hydrophobic,alifatic,Small,Neutral,NULL,NULL,NULL
+15,2-pyrrolidinecarboxaldehyde (2xR),hydrophilic,alifatic,Large,Neutral,NULL,heterocyclic,aldehyde
+16,n-propyl,hydrophobic,alifatic,Small,Neutral,NULL,NULL,NULL
 17,2-aminopropanal,hydrophilic,alifatic,Small,Neutral,NULL,NULL,aldehyde
 18,benzyl alcohol,hydrophobic,aromatic,Large,Negative,NULL,NULL,alcohol
 19,chlorobenzene,hydrophobic,aromatic,Large,Neutral,Chlorine,NULL,NULL
-20,pyrimidine (2xR),hydrophilic,aromatic,Large,Neutral,NULL,heterocylic,NULL
+20,pyrimidine (2xR),hydrophilic,aromatic,Large,Neutral,NULL,heterocyclic,NULL
