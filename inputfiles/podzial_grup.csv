@@ -1,6 +1,6 @@
-Group,Name,,,,,,,
+Group,Name,Hydro,Chain,Size,Charge,Heteroatom,Heterochain,Alcohol
 1,isobutyl,hydrophobic,alifatic,Small,Neutral,NULL  ,NULL,NULL
-2,L-glucose,hydrophilic,NULL,Large,Negative,NULL,NULL,NULL
+2,L-glucose,hydrophilic,alifatic,Large,Negative,NULL,NULL,NULL
 3,aniline (2xR),hydrophobic,aromatic,Large,Positive,NULL,NULL,NULL
 4,benzenol,hydrophilic,aromatic,Large,Negative,NULL,NULL,alcohol
 5,cyclohexanyl,hydrophobic,alifatic,Large,Neutral,NULL,NULL,NULL
