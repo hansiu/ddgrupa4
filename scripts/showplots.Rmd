@@ -196,6 +196,6 @@ przygotuj_i_zrob_ladniusie_wykresy()
 
 Wykresy dla odległości 3A:  
 1. Wszystkie grupy - aminokwasy
-<iframe src="/home/hania/ProjLek/ddgrupa4/results/plots/3_wszystkieaa.html" align="center" width="900" height="600" frameBorder="0"></iframe>
+<iframe src="../results/plots/3_wszystkieaa.html" align="center" width="900" height="600" frameBorder="0"></iframe>
 2. Wszystkie grupy - jony
-<iframe src="/home/hania/ProjLek/ddgrupa4/results/plots/3_wszystkieion.html" align="center" width="900" height="600" frameBorder="0"></iframe>
+<iframe src="../results/plots/3_wszystkieion.html" align="center" width="900" height="600" frameBorder="0"></iframe>
