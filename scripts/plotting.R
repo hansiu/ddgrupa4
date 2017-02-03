@@ -68,6 +68,7 @@ przygotuj_i_zrob_ladniusie_wykresy <- function(angs=3){
   
   #wszystkie
   wykresl_wszystkie(divaa,divion,angs)
+  wykresl_grupami(divaa,divion,angs)
 }
   
 ciastki_aa <- function(angs=3){
@@ -111,6 +112,7 @@ ciastki_ion <- function(angs=3){
   
   
 }
+
 #Tutaj jest funkcja, która robi dataframe o wielkości odpowiedniej dla
 #zgatherowanych danych odpowiednio jonów lub aminokwasów.
 #Można jej użyć bezpośrednio jako argumentu do cbind'a i wtedy będzie odpowiednia ramka danych.
@@ -139,21 +141,37 @@ wykresl_wszystkie <- function(divaa,divion,angs=3){
   divion <- cbind(divion,dodaj_grupowanie(angs,"ion"))
   wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'Name', data = divion, type = 'multiBarChart')
   wszystkieion$xAxis( axisLabel = "heteroatom")
-  wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
-  wszystkieaa$set(title = "Heteroatom occurence in ligand environment")
+  wszystkieion$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+  wszystkieion$set(title = "Heteroatom occurence in ligand environment")
   wszystkieion$save(paste0(toString(angs),'_wszystkieion.html'))
 }
 
-
+wykresl_grupami <- function(divaa,divion,angs = 3){
+  divaa <- gather(divaa, 'aminokwas','wartosc', -grupa)
+  divaa <- cbind(divaa,dodaj_grupowanie(angs,"aa"))
+  wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'Hydro', data = divaa, type = 'multiBarChart')
+  wszystkieaa$xAxis(axisLabel = "aminoacid")
+  wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+  wszystkieaa$set(title = "Aminoacid occurence in ligand environment")
+  wszystkieaa$save(paste0(toString(angs),'Hydro','_wszystkieaa.html'))
+  
+  divion <- gather(divion, 'heteroatom','wartosc', -grupa)
+  divion <- cbind(divion,dodaj_grupowanie(angs,"ion"))
+  wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'Hydro', data = divion, type = 'multiBarChart')
+  wszystkieion$xAxis( axisLabel = "heteroatom")
+  wszystkieion$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+  wszystkieion$set(title = "Heteroatom occurence in ligand environment")
+  wszystkieion$save(paste0(toString(angs),'Hydro','_wszystkieion.html'))
+}
 
 
 
 inicjalizuj()
 przygotuj_i_zrob_ladniusie_wykresy()
-ciastki_aa()
-ciastki_ion()
-porownaj_wagi()
+#ciastki_aa()
+#ciastki_ion()
+#porownaj_wagi()
 inicjalizuj(5)
 przygotuj_i_zrob_ladniusie_wykresy(5)
-ciastki_aa(5)
-ciastki_ion(5)
+#ciastki_aa(5)
+#ciastki_ion(5)

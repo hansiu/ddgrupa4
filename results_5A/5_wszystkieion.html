@@ -23,21 +23,22 @@
   </head>
   <body >
     
-    <div id = 'chart11e77ac98d6' class = 'rChart nvd3'></div>    
+    <div id = 'chart11e7310edd33' class = 'rChart nvd3'></div>    
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart11e77ac98d6()
+      drawchart11e7310edd33()
     });
-    function drawchart11e77ac98d6(){  
+    function drawchart11e7310edd33(){  
       var opts = {
- "dom": "chart11e77ac98d6",
+ "dom": "chart11e7310edd33",
 "width":    800,
 "height":    400,
 "x": "heteroatom",
 "y": "wartosc",
 "group": "Name",
 "type": "multiBarChart",
-"id": "chart11e77ac98d6" 
+"title": "Heteroatom occurence in ligand environment",
+"id": "chart11e7310edd33" 
 },
         data = [
  {
@@ -6482,33 +6483,18 @@
 } 
 ]
   
-      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
-        var data = d3.nest()
-          .key(function(d){
-            //return opts.group === undefined ? 'main' : d[opts.group]
-            //instead of main would think a better default is opts.x
-            return opts.group === undefined ? opts.y : d[opts.group];
-          })
-          .entries(data);
-      }
-      
-      if (opts.disabled != undefined){
-        data.map(function(d, i){
-          d.disabled = opts.disabled[i]
+      var data = d3.nest()
+        .key(function(d){
+          return opts.group === undefined ? 'main' : d[opts.group]
         })
-      }
+        .entries(data)
       
       nv.addGraph(function() {
         var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
           .width(opts.width)
           .height(opts.height)
-          
-        if (opts.type != "bulletChart"){
-          chart
-            .x(function(d) { return d[opts.x] })
-            .y(function(d) { return d[opts.y] })
-        }
-          
          
         
           
@@ -6528,6 +6514,21 @@
        nv.utils.windowResize(chart.update);
        return chart;
       });
+      
+      //add our title with html
+      //might be better with svg
+      d3.select("#" + opts.id).insert("h3","svg")
+        .text(opts.title);
+        //if desired, could change styling with css or with d3
+        //some examples here http://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/
+        //will use example
+        //.style("float","right");
+        //.style("text-shadow", "0 -1px 1px rgba(0,0,0,0.4)")
+        //.style("font-size","22px")
+        //.style("line-height", "40px")
+        //.style("color", "#355681")
+        //.style("ext-transform", "uppercase")
+        //.style("border-bottom", "1px solid rgba(53,86,129, 0.3)");
     };
 </script>
     
