@@ -147,6 +147,7 @@ wykresl_wszystkie <- function(divaa,divion,angs=3){
   divaa <- gather(divaa, 'aminokwas','wartosc', -grupa)
   divaa <- cbind(divaa,dodaj_grupowanie(angs,"aa"))
   wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'Name', data = divaa, type = 'multiBarChart')
+  wszystkieaa$chart(stacked = TRUE)
   wszystkieaa$xAxis(axisLabel = "aminoacid")
   wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieaa$set(title = "Aminoacid occurence in ligand environment")
@@ -155,6 +156,7 @@ wykresl_wszystkie <- function(divaa,divion,angs=3){
   divion <- gather(divion, 'heteroatom','wartosc', -grupa)
   divion <- cbind(divion,dodaj_grupowanie(angs,"ion"))
   wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'Name', data = divion, type = 'multiBarChart')
+   wszystkieion$chart(stacked = TRUE)
   wszystkieion$xAxis( axisLabel = "heteroatom")
   wszystkieion$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieion$set(title = "Heteroatom occurence in ligand environment")
@@ -168,6 +170,7 @@ wykresl_grupami <- function(divaa,divion,angs = 3){
   for(x in colnames(divaa)[6:12]){
     for (typ in as.character(unique(divaa[x])[,1])){
   wszystkieaa <- nPlot(wartosc ~ aminokwas, group = 'Name', data = divaa[divaa[x]==typ,], type = 'multiBarChart')
+   wszystkieaa$chart(stacked = TRUE)
   wszystkieaa$xAxis(axisLabel = "aminoacid")
   wszystkieaa$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieaa$set(title = "Aminoacid occurence in ligand environment")
@@ -179,6 +182,7 @@ wykresl_grupami <- function(divaa,divion,angs = 3){
   for(x in colnames(divion)[6:12]){
     for (typ in as.character(unique(divion[x])[,1])){
   wszystkieion <- nPlot(wartosc ~ heteroatom, group = 'Name', data = divion[divion[x]==typ,], type = 'multiBarChart')
+   wszystkieion$chart(stacked = TRUE)
   wszystkieion$xAxis( axisLabel = "heteroatom")
   wszystkieion$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
   wszystkieion$set(title = "Heteroatom occurence in ligand environment")
@@ -192,10 +196,16 @@ wykresl_grupami <- function(divaa,divion,angs = 3){
 ```{r cache=F, include=FALSE}
 inicjalizuj()
 przygotuj_i_zrob_ladniusie_wykresy()
+#inicjalizuj(5)
+#przygotuj_i_zrob_ladniusie_wykresy(5)
+
 ```
 
-Wykresy dla odległości 3A:  
-1. Wszystkie grupy - aminokwasy
-<iframe src="../results/plots/3_wszystkieaa.html" align="center" width="900" height="600" frameBorder="0"></iframe>
-2. Wszystkie grupy - jony
-<iframe src="../results/plots/3_wszystkieion.html" align="center" width="900" height="600" frameBorder="0"></iframe>
+1. Wszystkie grupy - aminokwasy, 3A
+<iframe src="../results/plots/3_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>
+i 5A
+<iframe src="../results_5A/plots/5_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>
+2. Wszystkie grupy - jony, 3A
+<iframe src="../results/plots/3_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>
+i 5A
+<iframe src="../results_5A/plots/5_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>

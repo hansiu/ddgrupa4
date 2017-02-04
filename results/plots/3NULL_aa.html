@@ -23,14 +23,14 @@
   </head>
   <body >
     
-    <div id = 'chart22ae36a3dc25' class = 'rChart nvd3'></div>    
+    <div id = 'chart15676967185d' class = 'rChart nvd3'></div>    
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart22ae36a3dc25()
+      drawchart15676967185d()
     });
-    function drawchart22ae36a3dc25(){  
+    function drawchart15676967185d(){  
       var opts = {
- "dom": "chart22ae36a3dc25",
+ "dom": "chart15676967185d",
 "width":    800,
 "height":    400,
 "x": "aminokwas",
@@ -38,7 +38,7 @@
 "group": "Name",
 "type": "multiBarChart",
 "title": "Aminoacid occurence in ligand environment",
-"id": "chart22ae36a3dc25" 
+"id": "chart15676967185d" 
 },
         data = [
  {
@@ -2856,7 +2856,8 @@
           .width(opts.width)
           .height(opts.height)
          
-        
+        chart
+  .stacked(true)
           
         chart.xAxis
   .axisLabel("aminoacid")

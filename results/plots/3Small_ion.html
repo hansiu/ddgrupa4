@@ -23,14 +23,14 @@
   </head>
   <body >
     
-    <div id = 'chart22ae6686127c' class = 'rChart nvd3'></div>    
+    <div id = 'chart156759e107f0' class = 'rChart nvd3'></div>    
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart22ae6686127c()
+      drawchart156759e107f0()
     });
-    function drawchart22ae6686127c(){  
+    function drawchart156759e107f0(){  
       var opts = {
- "dom": "chart22ae6686127c",
+ "dom": "chart156759e107f0",
 "width":    800,
 "height":    400,
 "x": "heteroatom",
@@ -38,7 +38,7 @@
 "group": "Name",
 "type": "multiBarChart",
 "title": "Heteroatom occurence in ligand environment",
-"id": "chart22ae6686127c" 
+"id": "chart156759e107f0" 
 },
         data = [
  {
@@ -2632,7 +2632,8 @@
           .width(opts.width)
           .height(opts.height)
          
-        
+        chart
+  .stacked(true)
           
         chart.xAxis
   .axisLabel("heteroatom")
