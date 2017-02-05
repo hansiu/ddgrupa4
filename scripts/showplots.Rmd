@@ -272,7 +272,7 @@ Grupy z grupą hydroksylową (alkohole) preferują dodatnio naładowane otoczeni
 
 Dwa aminokwasy polarne i jeden dodatnio naładowany - podejrzenie, że aminokwas polarny odwraca się w odpowiednią stronę.  
 
-## Naładowane ujemnie, otoczenie 3A
+## Grupy naładowane ujemnie, otoczenie 3A
 ### Przewaga:
 * asparaginy
 * kwasy asparaginowego
@@ -281,7 +281,7 @@ Dwa aminokwasy polarne i jeden dodatnio naładowany - podejrzenie, że aminokwas
 * argininy
 <iframe src="../results/plots/3Negative_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
 
-## Nienaładowane, otoczenie 3A
+## Grupy nienaładowane, otoczenie 3A
 ### Przewaga:
 * asparaginy
 * kwasy asparaginowego
@@ -291,7 +291,7 @@ Dwa aminokwasy polarne i jeden dodatnio naładowany - podejrzenie, że aminokwas
 * tyrozyna
 <iframe src="../results/plots/3Neutral_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>
 
-## Naładowane dodatnio, otoczenie 3A
+## Grupy naładowane dodatnio, otoczenie 3A
 ### Przewaga:
 * kwasu asparaginowgo
 * argininy
@@ -299,20 +299,20 @@ Dwa aminokwasy polarne i jeden dodatnio naładowany - podejrzenie, że aminokwas
 
 Wyraźna różnica między ujemnie i dodatnio naładowanymi grupami. 
 
-## Naładowane ujemnie, otoczenie 5A
+## Grupy naładowane ujemnie, otoczenie 5A
 ### Przewaga:
 * tyrozyny
 * tryptofanu
 <iframe src="../results_5A/plots/5Negative_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
 
-## Nienaładowane, otoczenie 5A
+## Grupy nienaładowane, otoczenie 5A
 ### Przewaga:
 * metioniny
 * tryprofanu
 * tyrozyny
 <iframe src="../results_5A/plots/5Neutral_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
 
-## Naładowane dodatnio, otoczenie 5A
+## Grupy naładowane dodatnio, otoczenie 5A
 ### Przewaga:
 * tyrozyny
 * tryptofanu
@@ -345,7 +345,7 @@ Przeciwny wniosek: istnieje szansa występowania stackingu. Co więcej, otoczeni
 
 Widać że rozszerzenie oglądanego otoczenia daje istotne rezultaty.  
 
-## Otoczenia 3A ligandów hydrofobowych
+## Otoczenia 3A ligandów o grupach hydrofobowych
 ### Przewaga:
 * kwasu agparaginowego
 * asparaginy
@@ -353,7 +353,7 @@ Widać że rozszerzenie oglądanego otoczenia daje istotne rezultaty.
 * tryptofanu
 <iframe src="../results/plots/3hydrophobic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
 
-## Otoczenia 3A ligandów hydrofilowych
+## Otoczenia 3A ligandów o grupach hydrofilowych
 ### Przewaga:
 * kwasu agparaginowego
 * asparaginy
@@ -363,14 +363,14 @@ Widać że rozszerzenie oglądanego otoczenia daje istotne rezultaty.
 
 Różnica jednego aminokwasu - pierścieniowy hydrofobowy dla hydrofobowych i glutamina dla hydrofilowych
 
-## Otoczenia 5A ligandów hydrofobowych
+## Otoczenia 5A ligandów o grupach hydrofobowych
 ### Przewaga:
 * tryptofanu
 * tyrozyny
 * metioniny
 <iframe src="../results_5A/plots/5hydrophobic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
 
-## Otoczenia 5A ligandów hydrofilowych
+## Otoczenia 5A ligandów o grupach hydrofilowych
 ### Przewaga:
 * tryptofanu
 * tyrozyny
