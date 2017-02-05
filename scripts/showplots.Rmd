@@ -1,5 +1,5 @@
 ---
-title: "showplots"
+title: "Prezentacja wyników grupy 4"
 author: "Hania Kranas, Asia Zbijewska"
 date: "3 lutego 2017"
 output: html_document
@@ -200,63 +200,180 @@ wykresl_grupami <- function(divaa,divion,angs = 3){
 #przygotuj_i_zrob_ladniusie_wykresy(5)
 
 ```
-Ciastki - prawdopodobieństwa wystąpienia w kieszeni aktywnej dla danej grupy:  
-3A, aminokwasy  
+# Wykresy typu pie chart - prawdopodobieństwa występowania w kieszeni aktywnej
+
+## Aminokwasów
 <img src="../results/ciastki_aa_3.png" alt="Prwdp. wystąpienia aa w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
   
-5A, aminokwasy  
+## Heteroatomów
 <img src="../results_5A/ciastki_aa_5.png" alt="Prwdp. wystąpienia hetat w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
-  
 
-3A, heteroatomy  
-<img src="../results/ciastki_ion_3.png" alt="Prwdp. wystąpienia aa w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
-5A, heteroatomy  
-<img src="../results_5A/ciastki_ion_5.png" alt="Prwdp. wystąpienia hetat w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
-  
 
-Wszystkie grupy - aminokwasy, 3A: D,K,N,Q,R,Y  
+# Wykresy typu bar plot - występowanie w białkowych kieszeniach aktywnych wszystkich grup
+
+## Aminokwasów w odległości 3A
+### Przeważają zdecydowanie:
+* asparagina
+* kwas asparaginowy
+* lizyna
+* glutamina
+* arginina
+* tyrozyna
 <iframe src="../results/plots/3_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
-i 5A: zdecydowanie przeważają W i Y  
+
+## Aminokwasów w odległości 5A
+### Zdecydowanie przeważają:
+* tryptofan
+* tyrozyna
 <iframe src="../results_5A/plots/5_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
 
-Ciekawa jest tutaj ta wyraźna różnica w najczęściej występujących aminokwasach. Widać, że rozszerzenie zakresu sporo potrafi zmienić.  
+Ciekawa jest tutaj wyraźna różnica w najczęściej występujących aminokwasach.
+Widaćjak znaczącą różnicę dało rozszerzenie zakresu..  
 
-Wszystkie grupy - jony, 3A: CA, CU, FE, ZN  
+## Heteroatomów w odległości 3A
+### Zdecydowanie przeważają jony:
+* wapnia
+* miedzi
+* żelaza(III)
+* cynku  
 <iframe src="../results/plots/3_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
-i 5A: CU, FE, MN, MSE, ZN  
+
+## Heteroatomów w odległości 3A
+### Zdecydowanie przeważają:
+ * miedź
+ * żelazo (III)
+ * mangan
+ * cynk
+ * MSE - selenometionina
 <iframe src="../results_5A/plots/5_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
 
-W większym otoczeniu mamy dużo większą różnorodność jonów (czego można się spodziewać).  
+W większym otoczeniu mamy dużo większą różnorodność jonów (czego można się było spodziewać).  
 
-Jak widać patrzyliśmy też na jony, ale ponieważ nie wynieśliśmy z nich zbyt wiele ciekawych informacji w większości w dalszych analizach pomijamy je.  
+Jak widać obliczenia przeprowadzaliśmy również dla jonów, ale ponieważ nie wniosły zbyt wiele ciekawych informacji pomijamy je w dalszych analizach.  
 
 
+# Wykresy typu bar plot - występowanie w białkowych kieszeniach aktywnych
+# Podział na grupy według właściwości chemicznych
 
-3A i ALKOHOLE: R, K  
+## Posiadające grupę -OH, otoczenie 3A
+### Przewaga:
+* argininy
+* lizyny
 <iframe src="../results/plots/3alcohol_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
 
 Grupy z grupą hydroksylową (alkohole) preferują dodatnio naładowane otoczenie.  
 
-5A i ALKOHOLE:  W, R, Y  
+## Posiadające grupę -OH, otoczenie 5A
+### Przewaga:
+* argininy
+* tryptofany
+* tyrozyny
 <iframe src="../results_5A/plots/5alcohol_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
 
-Dwa polarne i jeden dodatnio naładowany - podejrzenie, że aminokwas polarny odwraca się odpowiednią stronę.  
+Dwa aminokwasy polarne i jeden dodatnio naładowany - podejrzenie, że aminokwas polarny odwraca się w odpowiednią stronę.  
 
-TU DODAĆ NAŁADOWANE, SKORO JEST PODOBNIE
+## Naładowane ujemnie, otoczenie 3A
+### Przewaga:
+* asparaginy
+* kwasy asparaginowego
+* lizyny
+* glutaminy
+* argininy
+<iframe src="../results/plots/3Negative_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
 
-3A i AROMATYCZNE: D, N, R, Q  
+## Nienaładowane, otoczenie 3A
+### Przewaga:
+* asparaginy
+* kwasy asparaginowego
+* lizyny
+* glutaminy
+* argininy
+* tyrozyna
+<iframe src="../results/plots/3Neutral_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>
+
+## Naładowane dodatnio, otoczenie 3A
+### Przewaga:
+* kwasu asparaginowgo
+* argininy
+<iframe src="../results/plots/3Positive_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>
+
+Wyraźna różnica między ujemnie i dodatnio naładowanymi grupami. 
+
+## Naładowane ujemnie, otoczenie 5A
+### Przewaga:
+* tyrozyny
+* tryptofanu
+<iframe src="../results_5A/plots/5Negative_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+
+## Nienaładowane, otoczenie 5A
+### Przewaga:
+* metioniny
+* tryprofanu
+* tyrozyny
+<iframe src="../results_5A/plots/5Neutral_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
+
+## Naładowane dodatnio, otoczenie 5A
+### Przewaga:
+* tyrozyny
+* tryptofanu
+<iframe src="../results_5A/plots/5Positive_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
+
+Dla otoczenia 5A różnice nikłe różnice między dodatnio i ujemnie naładowanymi grupami - możliwe, że oddziaływania elektrostatyczne działają znacząco tylko na mniejszą odległość.
+
+## Otoczenie 3A ligandów z grupami aromatycznymi
+### Przeważają:
+* kwas asparaginowy
+* asparagina
+* glutamina
+* arginina  
 <iframe src="../results/plots/3aromatic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
 
-Wszystkie polarne, blisko jest tylko jeden aminokwas aromatyczny (Y).  
+Wszystkie polarne, blisko jest tylko jeden aminokwas aromatyczny - tyrozyna.  
 Nie można stwierdzić występowania stackingu - brak wpływu grupy aromatycznej na otoczenie aminokwasowe.  
 
-5A i AROMATYCZNE: F,L,M,W,Y  
+## Otoczenie 5A ligandów z grupami aromatycznymi
+### Przeważają:
+* fenyloalanina
+* leucyna
+* metionina
+* tyrozyna
+* tryptofan 
 <iframe src="../results_5A/plots/5aromatic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
 
-4 niepolarne; 3 aminokwasy aromatyczne.  
-Przeciwny wniosek: istnieje szansa występowania stackingu. Co więcej, otoczenie jest hydrofobowo-aromatyczne. Stacking występuje na większe odległości, preferuje też bycie "niezbyt blisko" dwóch pierścieni, więc można stwierdzić że jak najbardziej to zjawisko występuje tu.  
+4 aminokwasy niepolarne i 3 aminokwasy aromatyczne.  
+Przeciwny wniosek: istnieje szansa występowania stackingu. Co więcej, otoczenie jest hydrofobowo-aromatyczne. Stacking występuje na większe odległości, preferuje też bycie "niezbyt blisko" dwóch pierścieni, co pozwala potwierdzić hipotezę jego występowania.  
 
-Widać że rozszerzenie oglądanego otoczenia może sporo zmienić.  
+Widać że rozszerzenie oglądanego otoczenia daje istotne rezultaty.  
 
+## Otoczenia 3A ligandów hydrofobowych
+### Przewaga:
+* kwasu agparaginowego
+* asparaginy
+* argininy
+* tryptofanu
+<iframe src="../results/plots/3hydrophobic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
 
-HYDROFOBOWE/HYDROFILOWE!!!
+## Otoczenia 3A ligandów hydrofilowych
+### Przewaga:
+* kwasu agparaginowego
+* asparaginy
+* argininy
+* glutaminy
+<iframe src="../results/plots/3hydrophilic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
+
+Różnica jednego aminokwasu - pierścieniowy hydrofobowy dla hydrofobowych i glutamina dla hydrofilowych
+
+## Otoczenia 5A ligandów hydrofobowych
+### Przewaga:
+* tryptofanu
+* tyrozyny
+* metioniny
+<iframe src="../results_5A/plots/5hydrophobic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
+
+## Otoczenia 5A ligandów hydrofilowych
+### Przewaga:
+* tryptofanu
+* tyrozyny
+<iframe src="../results_5A/plots/5hydrophilic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe> 
+
+Różnica jednego aminokwasu - wydaje się być nieznacząca.
