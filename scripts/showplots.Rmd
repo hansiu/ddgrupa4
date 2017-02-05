@@ -194,18 +194,69 @@ wykresl_grupami <- function(divaa,divion,angs = 3){
 ```
 
 ```{r cache=F, include=FALSE}
-inicjalizuj()
-przygotuj_i_zrob_ladniusie_wykresy()
+#inicjalizuj()
+#przygotuj_i_zrob_ladniusie_wykresy()
 #inicjalizuj(5)
 #przygotuj_i_zrob_ladniusie_wykresy(5)
 
 ```
+Ciastki - prawdopodobieństwa wystąpienia w kieszeni aktywnej dla danej grupy:  
+3A, aminokwasy  
+<img src="../results/ciastki_aa_3.png" alt="Prwdp. wystąpienia aa w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
+  
+5A, aminokwasy  
+<img src="../results_5A/ciastki_aa_5.png" alt="Prwdp. wystąpienia hetat w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
+  
 
-1. Wszystkie grupy - aminokwasy, 3A
-<iframe src="../results/plots/3_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>
-i 5A
-<iframe src="../results_5A/plots/5_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>
-2. Wszystkie grupy - jony, 3A
-<iframe src="../results/plots/3_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>
-i 5A
-<iframe src="../results_5A/plots/5_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>
+3A, heteroatomy  
+<img src="../results/ciastki_ion_3.png" alt="Prwdp. wystąpienia aa w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
+5A, heteroatomy  
+<img src="../results_5A/ciastki_ion_5.png" alt="Prwdp. wystąpienia hetat w kieszeni aktywnej dla poszczególnych grup funkcjyjnych"  width="600"" height="600">
+  
+
+Wszystkie grupy - aminokwasy, 3A: D,K,N,Q,R,Y  
+<iframe src="../results/plots/3_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+i 5A: zdecydowanie przeważają W i Y  
+<iframe src="../results_5A/plots/5_wszystkieaa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+
+Ciekawa jest tutaj ta wyraźna różnica w najczęściej występujących aminokwasach. Widać, że rozszerzenie zakresu sporo potrafi zmienić.  
+
+Wszystkie grupy - jony, 3A: CA, CU, FE, ZN  
+<iframe src="../results/plots/3_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+i 5A: CU, FE, MN, MSE, ZN  
+<iframe src="../results_5A/plots/5_wszystkieion.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+
+W większym otoczeniu mamy dużo większą różnorodność jonów (czego można się spodziewać).  
+
+Jak widać patrzyliśmy też na jony, ale ponieważ nie wynieśliśmy z nich zbyt wiele ciekawych informacji w większości w dalszych analizach pomijamy je.  
+
+
+
+3A i ALKOHOLE: R, K  
+<iframe src="../results/plots/3alcohol_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+
+Grupy z grupą hydroksylową (alkohole) preferują dodatnio naładowane otoczenie.  
+
+5A i ALKOHOLE:  W, R, Y  
+<iframe src="../results_5A/plots/5alcohol_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+
+Dwa polarne i jeden dodatnio naładowany - podejrzenie, że aminokwas polarny odwraca się odpowiednią stronę.  
+
+TU DODAĆ NAŁADOWANE, SKORO JEST PODOBNIE
+
+3A i AROMATYCZNE: D, N, R, Q  
+<iframe src="../results/plots/3aromatic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+
+Wszystkie polarne, blisko jest tylko jeden aminokwas aromatyczny (Y).  
+Nie można stwierdzić występowania stackingu - brak wpływu grupy aromatycznej na otoczenie aminokwasowe.  
+
+5A i AROMATYCZNE: F,L,M,W,Y  
+<iframe src="../results_5A/plots/5aromatic_aa.html" align="center" width="900" height="500" frameBorder="0"></iframe>  
+
+4 niepolarne; 3 aminokwasy aromatyczne.  
+Przeciwny wniosek: istnieje szansa występowania stackingu. Co więcej, otoczenie jest hydrofobowo-aromatyczne. Stacking występuje na większe odległości, preferuje też bycie "niezbyt blisko" dwóch pierścieni, więc można stwierdzić że jak najbardziej to zjawisko występuje tu.  
+
+Widać że rozszerzenie oglądanego otoczenia może sporo zmienić.  
+
+
+HYDROFOBOWE/HYDROFILOWE!!!
